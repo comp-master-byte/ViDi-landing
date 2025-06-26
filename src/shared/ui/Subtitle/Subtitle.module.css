@@ -1,0 +1,6 @@
+.subtitle {
+  font-size: var(--subtitle-font-size);
+  color: var(--subtitle-color);
+  font-weight: 400;
+  line-height: 1.4;
+}

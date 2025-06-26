@@ -1,0 +1,28 @@
+:root {
+  /* Основные цвета текста */
+  --title-color: #000;
+  --subtitle-color: #525252;
+
+  /* Навигация */
+  --navigation-link-color: #171717;
+  --navigation-link-color-hover: #4482FF;
+
+  /* Кнопки */
+  --primary-btn-text-color: #fff;
+  --primary-btn-bg-color: linear-gradient(#4482FF, #294E99);
+  --primary-btn-bg-color-hover: #01349B;
+
+  --secondary-btn-text-color: #000;
+  --secondary-btn-bg-color: #fff;
+  --secondary-btn-border-color: #d9d9d9;
+  --secondary-btn-text-color-hover: #fff;
+  --secondary-btn-bg-color-hover: #4482FF;
+  --secondary-btn-border-color-hover: var(--secondary-btn-bg-color-hover);
+
+  --primary-title-font-size: 52px;
+  --title-font-size: 42px;
+  --small-title-font-size: 28px;
+  --subtitle-font-size: 20px;
+  --navigation-link-font-size: 18px;
+  --btn-font-size: 18px;
+}

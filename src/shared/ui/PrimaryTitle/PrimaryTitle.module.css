@@ -1,0 +1,6 @@
+.primaryTitle {
+  font-size: var(--primary-title-font-size);
+  line-height: 1.2;
+  color: var(--title-color);
+  font-weight: 600;
+}

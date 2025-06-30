@@ -1,0 +1,6 @@
+.cardTitle {
+  color: var(--title-card-color);
+  font-size: var(--card-title-font-size);
+  font-weight: 600;
+  line-height: 1.2;
+}

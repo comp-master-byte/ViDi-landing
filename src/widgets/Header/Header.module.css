@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLinksList {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.headerLinkItem {
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color .2s ease;
+  cursor: pointer;
+}
+
+.headerLinkItem:hover {
+  color: var(--text-color-hover);
+}

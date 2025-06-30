@@ -2,6 +2,11 @@
   /* Основные цвета текста */
   --title-color: #000;
   --subtitle-color: #525252;
+  --subtitle-16-color: var(--subtitle-color);
+  --title-card-color: #000;
+  --text-color: #171717;
+  --text-light-color: #525252;
+  --text-color-hover: #4482FF;
 
   /* Навигация */
   --navigation-link-color: #171717;
@@ -19,10 +24,14 @@
   --secondary-btn-bg-color-hover: #4482FF;
   --secondary-btn-border-color-hover: var(--secondary-btn-bg-color-hover);
 
+  /* Размер шрифтов */
   --primary-title-font-size: 52px;
   --title-font-size: 42px;
-  --small-title-font-size: 28px;
+  --title-28-font-size: 28px;
+  --card-title-font-size: 28px;
   --subtitle-font-size: 20px;
+  --subtitle-16-font-size: 16px;
   --navigation-link-font-size: 18px;
   --btn-font-size: 18px;
+  --text-font-size: 18px;
 }

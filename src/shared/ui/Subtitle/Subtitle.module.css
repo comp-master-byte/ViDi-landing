@@ -4,3 +4,10 @@
   font-weight: 400;
   line-height: 1.4;
 }
+
+.subtitle16 {
+  font-size: var(--subtitle-16-font-size);
+  color: var(--subtitle-16-color);
+  font-weight: 400;
+  line-height: 1.4;
+}

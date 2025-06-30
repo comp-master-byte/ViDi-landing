@@ -1,25 +1,37 @@
+import Image from 'next/image';
 import styles from './Button.module.css';
 import classNames from 'classnames';
 
 type ButtonIntent = 'primary' | 'secondary' | 'white';
 
 type ButtonProps = {
-  intent: ButtonIntent;
   children: React.ReactNode;
+  intent?: ButtonIntent;
+  startIcon?: string;
+  className?: string;
 }
 
 export function Button({
   intent = 'primary',
-  children
+  children,
+  startIcon,
+  className
 }: ButtonProps) {
   return (
     <button 
-      className={classNames(styles.button, {
+      className={classNames(styles.button, className, {
         [styles.primary]: intent === 'primary',
         [styles.secondary]: intent === 'secondary',
       })}
     >
-      {children}
+      {startIcon && (
+        <div className={styles.startIconWrapper}>
+          <Image src={startIcon} alt='' />
+        </div>
+      )}
+      <p>
+        {children}
+      </p>
     </button>
   )
 }

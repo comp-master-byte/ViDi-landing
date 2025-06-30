@@ -1,4 +1,5 @@
 export { PrimaryTitle } from './PrimaryTitle';
-export { Title } from './Title';
-export { Subtitle } from './Subtitle';
+export { Title, Title28 } from './Title';
+export { CardTitle } from './CardTitle';
+export { Subtitle, Subtitle16 } from './Subtitle';
 export { Button } from './Button';

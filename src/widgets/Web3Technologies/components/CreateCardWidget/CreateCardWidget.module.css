@@ -1,0 +1,26 @@
+.createCardWidgetWrapper {
+  position: relative;
+  width: 100%;
+  height: 272px;
+  border-radius: 20px;
+  padding: 30px;
+  background: linear-gradient(90deg, #4482FF 0%, #294E99 100%);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.createCardWidgetTitle {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.createCardWidgetLogo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.createCardWidgetButton {
+  width: 100%;
+}

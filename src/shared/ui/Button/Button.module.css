@@ -1,24 +1,55 @@
 .button {
   border: none;
   outline: none;
-  width: 100%;
+  width: auto;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 30px;
   font-size: var(--btn-font-size);
   font-weight: 500;
   line-height: 1.4;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.primary { 
-  background: linear-gradient(#4482FF, #294E99);
+.startIconWrapper {
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.primary {
+  position: relative;
+  background: linear-gradient(90deg, #4482FF 0%, #294E99 100%);
   color: var(--primary-btn-text-color);
-  transition: background-color .2s ease, color .2s ease;
+  transition: color 0.2s ease;
+  overflow: hidden;
 }
 
-.primary:hover {
-  background-color: var(--primary-btn-bg-color-hover);
+.primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #01349B;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 0;
+}
+
+.primary:hover::before {
+  opacity: 1;
+}
+
+.primary > * {
+  position: relative;
+  z-index: 1;
 }
 
 .secondary {

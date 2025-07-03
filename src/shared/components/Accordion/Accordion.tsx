@@ -4,7 +4,6 @@ import styles from './Accordion.module.css';
 import { Text, Title24 } from '@/shared/ui';
 import Image from 'next/image';
 import openIcon from '@/shared/assets/icons/accordion/plus.svg';
-import closeIcon from '@/shared/assets/icons/accordion/close.svg';
 import classNames from 'classnames';
 
 type AccordionProps = {

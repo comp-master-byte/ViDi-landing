@@ -77,9 +77,7 @@
 .active {
   background: linear-gradient(90deg, #4482FF 0%, #294E99 100%);
   color: #fff;
-  border: none;
 }
 
 .active:hover {
-  border: none;
 }

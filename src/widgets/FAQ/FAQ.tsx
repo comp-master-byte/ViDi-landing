@@ -6,7 +6,7 @@ import { Button } from "@/shared/ui";
 import { ACCORDION_HASH_MAP } from "./constants";
 
 type SelectedQuestion = 'wallet' | 'virtual-card' | 'eSim' | 'qr-payments';
-type AccordionContent = {
+export type AccordionContent = {
   id: string;
   title: string;
   text: string;

@@ -5,7 +5,7 @@
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0 30px;
   font-size: var(--btn-font-size);
   font-weight: 500;
@@ -65,7 +65,21 @@
   border: 1px solid var(--secondary-btn-border-color-hover);
 }
 
+.secondary .startIconWrapper {
+  background-color: #0069F6;
+}
+
 /* Аналогична secondary, но без границы */
 .white {
+  border: none;
+}
+
+.active {
+  background: linear-gradient(90deg, #4482FF 0%, #294E99 100%);
+  color: #fff;
+  border: none;
+}
+
+.active:hover {
   border: none;
 }

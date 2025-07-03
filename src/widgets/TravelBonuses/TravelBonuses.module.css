@@ -1,0 +1,12 @@
+.travelBonusesWrapper {
+  margin-top: 140px;
+}
+
+.travelBonusesCardsWrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.subtitleClassName {
+  margin-bottom: 50px;
+}

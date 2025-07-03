@@ -1,0 +1,25 @@
+.selectWrapper {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.selectStartSlot {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.selectStartSlotIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+
+.selectStartSlotTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: #000;
+}

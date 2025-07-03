@@ -1,19 +1,21 @@
 import Image from 'next/image';
 import styles from './PaymentButton.module.css';
+import classNames from 'classnames';
 
 type PaymentButtonProps = {
-  children: React.ReactNode;
   icon: string;
+  isAccent?: boolean;
 }
 
 export function PaymentButton({
-  children,
-  icon
+  icon,
+  isAccent
 }: PaymentButtonProps) {
   return (
-    <button className={styles.paymentButton}>
+    <button className={classNames(styles.paymentButton, {
+      [styles.accentPaymentButton]: isAccent
+    })}>
       <Image className={styles.paymentButtonIcon} src={icon} alt='payment-button' />
-      {children}
     </button>
   )
 }

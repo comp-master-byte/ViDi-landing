@@ -1,0 +1,16 @@
+.headingWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.heading {
+  text-align: center;
+  max-width: 628px;
+}
+
+.headingSubtitle {
+  margin-top: 20px;
+}

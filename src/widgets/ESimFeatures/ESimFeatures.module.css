@@ -1,0 +1,86 @@
+.eSimFeaturesWrapper {
+  margin-top: 140px;
+}
+
+.eSimFeaturesHeading {
+  text-align: center;
+}
+
+.eSimFeaturesSubtitle {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.eSimFeaturesCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  height: 1062px;
+}
+
+.eSimFeaturesCardHeading {
+  padding: 30px 30px 0 30px;
+}
+
+.eSimFeaturesCard1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 384px;
+  padding: 0;
+}
+
+.eSimFeaturesCard2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  height: 384px;
+  padding: 0;
+}
+
+.eSimFeaturesCard3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  height: 384px;
+  padding: 0;
+}
+
+.eSimFeaturesCard4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  height: 658px;
+}
+
+.eSimFeaturesCard5 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  height: 658px;
+}
+
+.eSimFeaturesCard6 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  padding: 0;
+  height: 368px;
+  overflow: hidden;
+}
+
+.eSimFeaturesCard7 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  height: 270px;
+}
+
+/* Изображения */
+.eSimFeaturesImagesWrapper {
+  margin-top: 30px;
+  padding: 0 18px;
+}
+
+.eSimFeaturesImagesCountries {
+  height: 260px;
+}
+
+.eSimFeaturesImagesTraficc {
+  margin-top: 48px;
+  height: 206px;
+}

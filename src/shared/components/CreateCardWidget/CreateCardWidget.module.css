@@ -7,11 +7,13 @@
   background: linear-gradient(90deg, #4482FF 0%, #294E99 100%);
   z-index: 1;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .createCardWidgetTitle {
   color: #fff;
-  margin-bottom: 50px;
+  flex: 1;
 }
 
 .createCardWidgetLogo {

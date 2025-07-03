@@ -9,19 +9,25 @@ type ButtonProps = {
   intent?: ButtonIntent;
   startIcon?: string;
   className?: string;
+  onClick?: () => void;
+  isActive?: boolean;
 }
 
 export function Button({
   intent = 'primary',
   children,
   startIcon,
-  className
+  className,
+  isActive,
+  onClick
 }: ButtonProps) {
   return (
     <button 
+      onClick={onClick}
       className={classNames(styles.button, className, {
         [styles.primary]: intent === 'primary',
         [styles.secondary]: intent === 'secondary',
+        [styles.active]: isActive
       })}
     >
       {startIcon && (

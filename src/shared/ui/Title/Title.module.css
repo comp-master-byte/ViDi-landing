@@ -11,3 +11,10 @@
   line-height: 1.2;
   font-weight: 600;
 }
+
+.title24 {
+  color: var(--title-color);
+  font-size: var(--title-24-font-size);
+  line-height: 1.2;
+  font-weight: 600;
+}

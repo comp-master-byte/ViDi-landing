@@ -1,0 +1,8 @@
+.subscriptionContent {
+  display: flex;
+  column-gap: 20px;
+}
+
+.subscriptionImageCard {
+  width: calc(50% - 10px);
+} 

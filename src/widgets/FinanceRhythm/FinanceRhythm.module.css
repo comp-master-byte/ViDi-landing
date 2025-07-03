@@ -1,0 +1,12 @@
+.financeRhythmWrapper {
+  margin-top: 140px;
+}
+
+.financeRhythmCards {
+  display: flex;
+  column-gap: 20px;
+}
+
+.payQrCodeCardTitle {
+  white-space: pre;
+}

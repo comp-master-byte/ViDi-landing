@@ -1,0 +1,15 @@
+.FAQHeadingWrapper {
+  margin-bottom: 40px;
+}
+
+.FAQContent {
+
+}
+
+.FAQContentButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  margin-bottom: 40px;
+}

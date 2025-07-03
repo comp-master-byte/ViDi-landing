@@ -5,10 +5,12 @@ import { COUNTRIES } from "./consts";
 import Image from "next/image";
 import bankCard from '@/shared/assets/virtual_web3_map/my_bank_card.png';
 import countriesMap from '@/shared/assets/virtual_web3_map/countries_map.png';
-import { GreyCard } from "@/shared/components";
-import { CreateCardWidget, PaymentButton } from "./components";
+import { CreateCardWidget, GreyCard } from "@/shared/components";
+import { PaymentButton } from "./components";
 import createCardInApp from '@/shared/assets/virtual_web3_map/create_card_in_app.png';
 import topUpCard from '@/shared/assets/virtual_web3_map/top_up_card_with_wallet.png';
+import googlePAy from '@/shared/assets/virtual_web3_map/icons/google_pay.svg';
+import applePay from '@/shared/assets/virtual_web3_map/icons/apple_pay.svg';
 
 function CardRegistrationProcess() {
 
@@ -23,8 +25,8 @@ function CardRegistrationProcess() {
   const renderPaymentButtons = useCallback(() => {
     return (
       <div className={styles.paymentButtonsList}>
-        <PaymentButton icon="">Pay</PaymentButton>
-        <PaymentButton icon="">Pay</PaymentButton>
+        <PaymentButton isAccent icon={googlePAy} />
+        <PaymentButton icon={applePay} />
       </div>
     )
   }, [])
@@ -32,24 +34,28 @@ function CardRegistrationProcess() {
   return (
     <div className={styles.cardRegistrationProcessWrapper}>
       <GreyCard  
-        title="Оформите карту в приложении"
+        title={`Оформите карту\n в приложении`}
         subtitle="VISA или Mastercard за минуту"
         className={styles.registrationProcess__1}
         renderEndSlot={renderCreateCardInAppIcon}
       />
       <GreyCard 
-        title="Пополните карту через кошелек"
+        title={`Пополните карту\n через кошелек`}
         subtitle="Мгновенное зачисление средств"
         className={styles.registrationProcess__2}
         renderEndSlot={renderTopUpCardIcon}
       />
       <GreyCard 
-        title="Привяжите к Apple Pay и Google Pay"
-        subtitle="Оплачивайте отели, рестораны за границей"
+        title={`Привяжите к Apple Pay\n и Google Pay`}
+        subtitle={`Оплачивайте отели, рестораны\n за границей`}
         className={styles.registrationProcess__3}
         renderEndSlot={renderPaymentButtons}
       />
-      <CreateCardWidget className={styles.registrationProcess__4} />
+      <CreateCardWidget 
+        title="Оформите карту и путешествуйте свободно"
+        buttonTitle="Оформить карту"
+        className={styles.registrationProcess__4} 
+      />
     </div>
   ) 
 }

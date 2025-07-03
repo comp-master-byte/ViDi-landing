@@ -1,5 +1,16 @@
 import styles from './app.module.css';
-import { CryptoLine, Header, TravelComfort, Web3Technologies } from "@/widgets";
+import { 
+  CryptoLine, 
+  ESimFeatures, 
+  FAQ, 
+  FinanceRhythm, 
+  Footer, 
+  Header, 
+  Subscription, 
+  TravelBonuses, 
+  TravelComfort, 
+  Web3Technologies 
+} from "@/widgets";
 
 export default function Home() {
   return (
@@ -10,6 +21,14 @@ export default function Home() {
         <Web3Technologies />
       </div>
       <CryptoLine />
+      <div className={styles.container}>
+        <ESimFeatures />
+        <FinanceRhythm />
+        <TravelBonuses />
+        <Subscription />
+        <FAQ />
+        <Footer />
+      </div>
     </div>
   );
 }

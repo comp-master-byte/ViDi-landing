@@ -1,1 +1,1 @@
-export { CryptoLine } from './GryptoLine';
+export { CryptoLine } from './CryptoLine';

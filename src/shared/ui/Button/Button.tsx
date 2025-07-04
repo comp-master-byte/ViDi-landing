@@ -27,7 +27,8 @@ export function Button({
       className={classNames(styles.button, className, {
         [styles.primary]: intent === 'primary',
         [styles.secondary]: intent === 'secondary',
-        [styles.active]: isActive
+        [styles.active]: isActive,
+        [styles.buttonWithIcon]: startIcon
       })}
     >
       {startIcon && (

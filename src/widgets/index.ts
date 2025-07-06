@@ -8,3 +8,4 @@ export { Subscription } from './Subscription';
 export { FAQ } from './FAQ';
 export { ESimFeatures } from './ESimFeatures';
 export { Footer } from './Footer';
+export { SocialMediaLine } from './SocialMediaLine';

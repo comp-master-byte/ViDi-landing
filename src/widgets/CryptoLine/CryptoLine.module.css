@@ -1,31 +1,3 @@
 .cryptoLineWrapper {
-  overflow: hidden;
   margin-top: 100px;
-  padding: 1rem 0;
-}
-
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.marqueeContent {
-  display: inline-flex;
-  animation: marquee 20s linear infinite;
-  will-change: transform;
-}
-
-.marqueeItem {
-  flex: 0 0 auto;
-  margin: 0 40px;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
 }

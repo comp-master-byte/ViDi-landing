@@ -6,20 +6,22 @@ import classNames from 'classnames';
 type IconCardProps = {
   icon: string;
   alt?: string;
-  bgColor: string;
+  bgColor?: string;
   className?: string;
+  fullIcon?: boolean;
 }
 
 export const IconCard = memo(function IconCard({
  icon,
  alt,
  bgColor,
- className
+ className,
+ fullIcon
 }: IconCardProps) {
   return (
     <div 
       style={{
-        backgroundColor: bgColor
+        backgroundColor: fullIcon ? 'none' : bgColor
       }} 
       className={classNames(styles.iconCardWrapper, className)}
     >

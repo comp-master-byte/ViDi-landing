@@ -6,6 +6,7 @@ import {
   FinanceRhythm, 
   Footer, 
   Header, 
+  SocialMediaLine, 
   Subscription, 
   TravelBonuses, 
   TravelComfort, 
@@ -29,6 +30,13 @@ export default function Home() {
           <FinanceRhythm />
           <TravelBonuses />
           <Subscription />
+        </div>
+      </div>
+
+      <SocialMediaLine />
+
+      <div className={styles.responsive}>
+        <div className={styles.container}>
           <FAQ />
           <Footer />
         </div>

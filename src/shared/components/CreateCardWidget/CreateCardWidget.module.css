@@ -26,3 +26,15 @@
 .createCardWidgetButton {
   width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+  .createCardWidgetWrapper {
+    padding: 14px;
+    height: 146px;
+  }
+
+  .createCardWidgetLogo {
+    height: 145px;
+    width: 120px;
+  }
+}

@@ -31,3 +31,14 @@
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 480px) {
+  .greyCardWrapper {
+    padding: 14px 14px 0;
+  }
+
+  .greyCardSubtitle {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+}

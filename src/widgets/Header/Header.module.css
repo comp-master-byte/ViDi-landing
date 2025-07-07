@@ -14,7 +14,7 @@
 }
 
 .headerLinkItem {
-  font-size: var(--text-font-size);
+  font-size: var(--navigation-link-font-size);
   color: var(--text-color);
   font-weight: 600;
   line-height: 1.4;
@@ -24,4 +24,36 @@
 
 .headerLinkItem:hover {
   color: var(--text-color-hover);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+  .header {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    height: auto;
+  }
+
+  .headerLogo {
+    flex: 1;
+  }
+
+  .headerLogo img {
+    width: 51px;
+    height: 40px;
+  }
+
+  .headerLinksList {
+    column-gap: 0;
+    order: 3;
+    border-top: 1px solid #D9D9D9;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .headerLinkItem {
+  }
 }

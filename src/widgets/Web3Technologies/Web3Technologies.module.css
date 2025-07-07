@@ -93,3 +93,101 @@
   flex-direction: column;
   row-gap: 10px;
 }
+
+.smallWeb3TechnologiesBankCard {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .web3Technologies {
+    margin-top: 40px;
+  } 
+
+  .web3TechnologiesName {
+    margin-bottom: 20px;
+  }
+
+  .web3TechnologiesTitle {
+    margin-bottom: 8px;
+  }
+
+  .web3PaymentMap {
+    height: 151px;
+    padding-left: 14px;
+    column-gap: 13px;
+  }
+
+  .web3PaymentMapInfo__title {
+    margin-bottom: 16px;
+  }
+
+  .web3PaymentMapInfo__subtitle {
+    margin-bottom: 8px;
+    max-width: 150px;
+  }
+
+  .web3PaymentCountriesList {
+    column-gap: 6px;
+  }
+
+  .web3PaymentCountryListItem {
+    width: 16px;
+    height: 16px;
+  }
+
+  .cardRegistrationProcessWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-height: 414px;
+    gap: 9px;
+  }
+
+  .registrationProcess__1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 259px;
+    overflow: hidden;
+  }
+
+  .registrationProcess__2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 259px;
+    overflow: hidden;
+  }
+
+  .registrationProcessImage__1,
+  .registrationProcessImage__2 {
+    height: 200px;
+  }
+
+  .registrationProcess__3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-height: 146px;
+  }
+
+  .registrationProcess__4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .web3TechnologiesBankCard {
+    display: none;
+  }
+
+  .smallWeb3TechnologiesBankCard {
+    display: inline-block;
+    align-self: flex-end;
+  }
+
+  .web3TechnologiesCountriesMap {
+    width: 197px;
+    height: 127px;
+  }
+
+  .paymentButtonsList {
+    row-gap: 4px;
+    margin-bottom: 0;
+  }
+}

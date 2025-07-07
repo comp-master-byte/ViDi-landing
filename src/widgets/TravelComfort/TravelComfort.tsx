@@ -1,10 +1,11 @@
 import { memo } from "react";
 import styles from './TravelComfort.module.css';
+import Image from "next/image";
 import { PrimaryTitle, Subtitle } from "@/shared/ui";
 import { PAYMENT_WAYS } from "./consts";
 import { IconCard } from "@/shared/components";
 import webApplication from "@/shared/assets/primary_page/web_application.png";
-import Image from "next/image";
+import smallWebApplication from "@/shared/assets/primary_page/small_web_application.png";
 
 export const TravelComfort = memo(function TravelComfort() {
   return (
@@ -26,6 +27,7 @@ export const TravelComfort = memo(function TravelComfort() {
       </div> 
       
       <Image className={styles.webApplication} src={webApplication} alt="" />
+      <Image className={styles.smallWebApplication} src={smallWebApplication} alt="" />
     </section>
   )
 })

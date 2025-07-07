@@ -10,6 +10,7 @@
   font-size: var(--title-28-font-size);
   line-height: 1.2;
   font-weight: 600;
+  white-space: pre-line;
 }
 
 .title24 {

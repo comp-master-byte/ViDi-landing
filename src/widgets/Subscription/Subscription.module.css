@@ -6,3 +6,22 @@
 .subscriptionImageCard {
   width: calc(50% - 10px);
 } 
+
+@media screen and (max-width: 480px) {
+  .subscriptionContent {
+    column-gap: 9px;
+  } 
+
+  .subscriptionImageCard {
+    width: calc(50% - 4px);
+    overflow: hidden;
+  }
+
+  .subscriptionImage {
+    height: 128px;
+  }
+
+  .subscriptionSubtitle {
+    margin-bottom: 14px;
+  }
+}

@@ -53,3 +53,37 @@
   transform: rotate(-45deg);
   transition: transform .25s ease;
 }
+
+.accordionMarginBottom {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .accordionWrapper {
+    border-radius: 8px;
+    margin-bottom: 6px;
+  }
+
+  .accordionHeader {
+    padding: 8px;
+  }
+
+  .accordionIconWrapper {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+  }
+
+  .accordionIcon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .accordionContent {
+    padding: 0 8px 0px 12px;
+  }
+
+  .accordionMarginBottom {
+    margin-bottom: 8px;
+  }
+}

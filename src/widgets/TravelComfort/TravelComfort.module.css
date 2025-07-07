@@ -15,6 +15,7 @@
 .paymentWaysList {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 20px;
 }
 
@@ -22,4 +23,38 @@
   position: absolute;
   top: 150px;
   right: 0;
+}
+
+.smallWebApplication {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 480px) {
+  .travelComfortWrapper {
+    height: 250px;
+    margin-top: 16px;
+    align-items: flex-start;
+  }
+
+  .travelComfortLeftColumn {
+    row-gap: 14px;
+    max-width: 170px;
+  }
+
+  .paymentWaysList {
+    gap: 8px;
+    max-width: 113px;
+  }
+
+  .webApplication {
+    display: none;
+  }
+
+  .smallWebApplication {
+    display: inline-block;
+    position: absolute;
+    top: 108px;
+    right: 0;
+  }
 }

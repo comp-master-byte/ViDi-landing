@@ -60,3 +60,72 @@
   align-items: center;
   column-gap: 20px;
 }
+
+.footerMobileTopContent {
+  display: none;
+  border-top: 1px solid #D9D9D9;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .footerTopContent {
+    display: none;
+  }
+
+  .footerMobileTopContent {
+    display: block;
+  }
+
+  .footerMidContentSection {
+    height: 58px;
+    border-radius: 8px;
+  }
+
+  .footerMidDescription {
+    padding: 0 12px;
+  }
+
+  .footerMidText {
+    font-size: 10px;
+  }
+
+  .footerMobileButtons {
+    display: flex;
+    column-gap: 9px;
+    margin: 10px 0;
+  }
+
+  .footerButtons {
+    width: 100%;
+  }
+
+  .footerButton {
+    height: 40px;
+    border-radius: 14px;
+  }
+
+  .footerBottomContent {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 17px;
+  }
+
+  .footerBottomLeft {
+    row-gap: 8px;
+  }
+
+  .footerLogo {
+    width: 41px;
+    height: 32px;
+  }
+
+  .paymentCard {
+    width: 46px;
+    height: 32px;
+  }
+}

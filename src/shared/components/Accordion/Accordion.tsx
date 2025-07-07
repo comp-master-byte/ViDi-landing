@@ -37,10 +37,11 @@ export const Accordion = memo(function Accordion({
       </button>
       <div
         ref={contentRef}
-        className={styles.accordionContent}
+        className={classNames(styles.accordionContent, {
+          [styles.accordionMarginBottom]: isAccordionOpen
+        })}
         style={{
           maxHeight: isAccordionOpen ? `${contentRef.current?.scrollHeight}px` : '0',
-          marginBottom: isAccordionOpen ? '20px' : '0'
         }}
       >
         <Text isLight>{text}</Text>

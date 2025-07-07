@@ -37,6 +37,7 @@ export const FAQ = memo(function FAQ() {
             intent="secondary" 
             isActive={selectedQuestion === 'wallet'} 
             onClick={handleSelectedQuestion('wallet')}
+            className={styles.FAQButton}
           >
             Кошелёк
           </Button>
@@ -44,6 +45,7 @@ export const FAQ = memo(function FAQ() {
             intent="secondary" 
             isActive={selectedQuestion === 'virtual-card'}
             onClick={handleSelectedQuestion('virtual-card')}
+            className={styles.FAQButton}
           >
             Виртуальная карта
           </Button>
@@ -51,6 +53,7 @@ export const FAQ = memo(function FAQ() {
             intent="secondary" 
             isActive={selectedQuestion === 'eSim'}
             onClick={handleSelectedQuestion('eSim')}
+            className={styles.FAQButton}
           >
             eSim Global
           </Button>
@@ -58,6 +61,7 @@ export const FAQ = memo(function FAQ() {
             intent="secondary" 
             isActive={selectedQuestion === 'qr-payments'}
             onClick={handleSelectedQuestion('qr-payments')}
+            className={styles.FAQButton}
           >
             QR платежи
           </Button>

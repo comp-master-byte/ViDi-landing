@@ -8,7 +8,9 @@ import tgIcon from '@/shared/assets/tg_mini_app.svg';
 export const Header = memo(function Header() {
   return (
     <header className={styles.header}>
-      <Image src={ViDiLogo} alt="ViDi" />
+      <div className={styles.headerLogo}>
+        <Image src={ViDiLogo} alt="ViDi" />
+      </div>
       <ul className={styles.headerLinksList}>
         <li className={styles.headerLinkItem}>Кошелек</li>
         <li className={styles.headerLinkItem}>Виртуальная карта</li>

@@ -4,6 +4,7 @@ import { Subtitle, Subtitle16, Title, Title28 } from "@/shared/ui";
 import { COUNTRIES } from "./consts";
 import Image from "next/image";
 import bankCard from '@/shared/assets/virtual_web3_map/my_bank_card.png';
+import smallBankCard from '@/shared/assets/virtual_web3_map/small_bank_card.png';
 import countriesMap from '@/shared/assets/virtual_web3_map/countries_map.png';
 import { CreateCardWidget, GreyCard } from "@/shared/components";
 import { PaymentButton } from "./components";
@@ -13,13 +14,12 @@ import googlePAy from '@/shared/assets/virtual_web3_map/icons/google_pay.svg';
 import applePay from '@/shared/assets/virtual_web3_map/icons/apple_pay.svg';
 
 function CardRegistrationProcess() {
-
   const renderCreateCardInAppIcon = useCallback(() => {
-    return <Image src={createCardInApp} alt="createCardInApp" />
+    return <Image className={styles.registrationProcessImage__1} src={createCardInApp} alt="createCardInApp" />
   }, [])
 
   const renderTopUpCardIcon = useCallback(() => {
-    return <Image src={topUpCard} alt="topUpCard" />
+    return <Image className={styles.registrationProcessImage__2} src={topUpCard} alt="topUpCard" />
   }, [])
 
   const renderPaymentButtons = useCallback(() => {
@@ -52,7 +52,7 @@ function CardRegistrationProcess() {
         renderEndSlot={renderPaymentButtons}
       />
       <CreateCardWidget 
-        title="Оформите карту и путешествуйте свободно"
+        title={`Оформите карту\n и путешествуйте свободно`}
         buttonTitle="Оформить карту"
         className={styles.registrationProcess__4} 
       />
@@ -87,6 +87,11 @@ export const Web3Technologies = memo(function Web3Technologies() {
           src={bankCard} 
           alt="bankCard" 
           className={styles.web3TechnologiesBankCard}
+        />
+        <Image
+          src={smallBankCard}
+          alt='smallBankCard'
+          className={styles.smallWeb3TechnologiesBankCard}
         />
         <Image 
           src={countriesMap} 

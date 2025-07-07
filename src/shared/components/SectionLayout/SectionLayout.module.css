@@ -1,3 +1,9 @@
 .sectionLayoutWrapper {
   margin-top: 140px;
 }
+
+@media screen and (max-width: 480px) {
+  .sectionLayoutWrapper {
+    margin-top: 57px;
+  }
+}

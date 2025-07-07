@@ -26,9 +26,9 @@ export default function Home() {
       <CryptoLine />
       <div className={styles.responsive}>
         <div className={styles.container}>
-          <ESimFeatures />
+          {/* <ESimFeatures />
           <FinanceRhythm />
-          <TravelBonuses />
+          <TravelBonuses /> */}
           <Subscription />
         </div>
       </div>

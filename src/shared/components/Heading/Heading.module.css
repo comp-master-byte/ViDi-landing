@@ -14,3 +14,17 @@
 .headingSubtitle {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .headingWrapper {
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    max-width: 261px;
+  }
+
+  .headingSubtitle {
+    margin-top: 8px;
+  }
+}

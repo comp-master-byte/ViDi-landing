@@ -23,7 +23,9 @@ export const IconCard = memo(function IconCard({
       style={{
         backgroundColor: fullIcon ? 'none' : bgColor
       }} 
-      className={classNames(styles.iconCardWrapper, className)}
+      className={classNames(styles.iconCardWrapper, className, {
+        [styles.fullIconCard]: fullIcon
+      })}
     >
       <Image src={icon} alt={alt||''} />
     </div>

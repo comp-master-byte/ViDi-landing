@@ -15,3 +15,27 @@
   border-radius: 20px;
   padding: 0 30px;
 }
+
+.benifitListItemIcon {
+  width: 31px;
+  height: 31px;
+}
+
+@media screen and (max-width: 480px) {
+  .benifitsListWrapper {
+    row-gap: 4px;
+    width: calc(50% - 4px);
+  }
+
+  .benifitListItemWrapper {
+    height: 32px;
+    padding: 0 8px;
+    column-gap: 8px;
+    border-radius: 8px;
+  }
+
+  .benifitListItemIcon {
+    width: 13px;
+    height: 13px;
+  }
+}

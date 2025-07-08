@@ -1,6 +1,7 @@
-import { memo, useCallback } from "react";
+'use client';
+import { memo, useCallback, useMemo } from "react";
 import styles from './ESimFeatures.module.css';
-import { CreateCardWidget, GreyCard, Heading, SectionLayout } from "@/shared/components";
+import { CreateCardWidget, GreyCard, Heading, ResponsiveContainer, SectionLayout } from "@/shared/components";
 import internet from '@/shared/assets/eSim/icons/internet.svg';
 import eSim from '@/shared/assets/eSim/icons/eSim.svg';
 import wifi from '@/shared/assets/eSim/icons/wifi.svg';
@@ -13,6 +14,64 @@ import simpleLoading from '@/shared/assets/eSim/simple_loading.png';
 import support from '@/shared/assets/eSim/support.png';
 import Image from "next/image";
 import classNames from "classnames";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+type ESimFeatureListItem = {
+  id: string;
+  title: string;
+  startIcon: string;
+  renderEndSlot: () => React.ReactNode;
+}
+
+type ESimFeaturesMobileSwiperProps = {
+  eSimFeaturesList: ESimFeatureListItem[]
+}
+
+function ESimFeaturesMobileSwiper({
+  eSimFeaturesList
+}: ESimFeaturesMobileSwiperProps) {
+  return (
+    <Swiper
+      modules={[Pagination]}
+      slidesPerView={2.5}
+      spaceBetween={8}
+      pagination={{
+        clickable: true
+      }}
+      className={styles.eSimFeaturesSwiper}
+      breakpoints={{
+        410: {
+          slidesPerView: 2.5,
+          spaceBetween: 9
+        },
+        350: {
+          slidesPerView: 2.2,
+          spaceBetween: 9
+        },
+        310: {
+          slidesPerView: 2.2,
+          spaceBetween: 9
+        }
+      }}
+    >
+      {eSimFeaturesList.map((eSimfFeatureItem) => (
+        <SwiperSlide>
+          <GreyCard 
+            key={eSimfFeatureItem.id} 
+            {...eSimfFeatureItem} 
+            startIconBg="linear-gradient(#4482FF, #294E99)"
+            className={styles.eSimFeaturesTopCard}
+            titleClassName={styles?.titleClassName}
+            headingClassName={styles.eSimFeaturesCardHeading}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  )
+}
 
 export const ESimFeatures = memo(function eSimFeatures() {
   
@@ -79,64 +138,66 @@ export const ESimFeatures = memo(function eSimFeatures() {
     ) 
   }, [])
 
+  const eSimFeaturesCardsList = useMemo(() => {
+    return [
+      {id: '1', title: 'Покрытие\n без границ', startIcon: internet, renderEndSlot: renderCountriesListIcon},
+      {id: '2', title: 'Доступные цены на Гб', startIcon: wifi, renderEndSlot: renderTariffsIcon},
+      {id: '3', title: 'Покрытие\n без границ', startIcon: eSim, renderEndSlot: renderTrafficIcon},
+    ]
+  }, [renderCountriesListIcon, renderTariffsIcon, renderTrafficIcon])
+
   return (
     <SectionLayout id="eSim-features">
       <Heading 
         title="Свобода связи с eSim"
         subtitle="Ваш ключ к международному интернету"
       />
+      <ResponsiveContainer>
+        <div className={styles.eSimFeaturesTopListCards}>
+          {eSimFeaturesCardsList.map((eSimfFeatureItem) => (
+            <GreyCard 
+              key={eSimfFeatureItem.id} 
+              {...eSimfFeatureItem} 
+              startIconBg="linear-gradient(#4482FF, #294E99)"
+              className={styles.eSimFeaturesTopCard}
+              headingClassName={styles.eSimFeaturesCardHeading}
+            />
+          ))}
+        </div>
+      </ResponsiveContainer>
 
-      <div className={styles.eSimFeaturesCards}>
-        <GreyCard 
-          title={`Покрытие\n без границ`}
-          startIcon={internet}
-          startIconBg="linear-gradient(#4482FF, #294E99)"
-          renderEndSlot={renderCountriesListIcon}
-          className={styles.eSimFeaturesCard1}
-          headingClassName={styles.eSimFeaturesCardHeading}
-        />
-        <GreyCard 
-          title="Доступные цены на Гб"
-          startIcon={wifi}
-          startIconBg="linear-gradient(#4482FF, #294E99)"
-          renderEndSlot={renderTariffsIcon}
-          className={styles.eSimFeaturesCard2}
-          headingClassName={styles.eSimFeaturesCardHeading}
-        />
-        <GreyCard 
-          title={`Следите\n за трафиком`}
-          startIcon={eSim}
-          startIconBg="linear-gradient(#4482FF, #294E99)"
-          renderEndSlot={renderTrafficIcon}
-          className={styles.eSimFeaturesCard3}
-          headingClassName={styles.eSimFeaturesCardHeading}
-        />
-        <GreyCard 
-          title="Региональные тарифы для путешествий"
-          subtitle={`Интернет в нескольких странах\n с одним тарифным планом`}
-          renderEndSlot={renderRegionTariffIcon}
-          className={styles.eSimFeaturesCard4}
-        />
-        <GreyCard 
-          title="Простая установка eSim"
-          subtitle={`Включите роуминг за минуту\n по прилёту`}
-          renderEndSlot={renderSimpleLoadingIcon}
-          className={styles.eSimFeaturesCard5}
-        />
-        <GreyCard 
-          title={`Поддержка\n 24/71`}
-          startIcon={clock}
-          startIconBg="linear-gradient(#4482FF, #294E99)"
-          renderEndSlot={renderSupportIcon}
-          className={styles.eSimFeaturesCard6}
-          headingClassName={styles.eSimFeaturesCardHeading}
-        />
-        <CreateCardWidget 
-          title="Оформите eSim и будьте на связи"
-          buttonTitle="Оформить eSim"
-          className={styles.eSimFeaturesCard7} 
-        />
-      </div>
+      {/* Мобильная версия */}
+      <ESimFeaturesMobileSwiper eSimFeaturesList={eSimFeaturesCardsList} />
+
+      <ResponsiveContainer>
+        <div className={styles.eSimFeaturesCards}>
+          <GreyCard 
+            title="Региональные тарифы для путешествий"
+            subtitle={`Интернет в нескольких странах\n с одним тарифным планом`}
+            renderEndSlot={renderRegionTariffIcon}
+            className={styles.eSimFeaturesCard4}
+          />
+          <GreyCard 
+            title={`Простая установка\n eSim`}
+            subtitle={`Включите роуминг за минуту\n по прилёту`}
+            renderEndSlot={renderSimpleLoadingIcon}
+            className={styles.eSimFeaturesCard5}
+          />
+          <GreyCard 
+            title={`Поддержка\n 24/71`}
+            startIcon={clock}
+            startIconBg="linear-gradient(#4482FF, #294E99)"
+            renderEndSlot={renderSupportIcon}
+            className={styles.eSimFeaturesCard6}
+            headingClassName={styles.eSimFeaturesCardHeading}
+          />
+          <CreateCardWidget 
+            title="Оформите eSim и будьте на связи"
+            buttonTitle="Оформить eSim"
+            className={styles.eSimFeaturesCard7} 
+          />
+        </div>
+      </ResponsiveContainer>
     </SectionLayout>
   )
 })

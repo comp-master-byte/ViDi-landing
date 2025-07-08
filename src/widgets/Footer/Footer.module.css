@@ -68,6 +68,10 @@
   padding-top: 20px;
 }
 
+.footerButton {
+  width: 100%;
+}
+
 @media screen and (max-width: 480px) {
   .footer {
     margin-top: 30px;

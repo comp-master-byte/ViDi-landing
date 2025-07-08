@@ -6,6 +6,7 @@ import ViDiLogo from '@/shared/assets/logo.svg';
 import { Button } from "@/shared/ui";
 import tgIcon from '@/shared/assets/tg_mini_app.svg';
 import { ResponsiveContainer } from "@/shared/components";
+import { MINI_APP_TG_LINK } from "@/shared/utils";
 
 export const Header = memo(function Header() {
 
@@ -55,9 +56,11 @@ export const Header = memo(function Header() {
               Подписка
             </li>
           </ul>
-          <Button startIcon={tgIcon} >
-            Mini App
-          </Button>
+          <a href={MINI_APP_TG_LINK} target="_blank">
+            <Button startIcon={tgIcon}>
+              Mini App
+            </Button>
+          </a>
         </div>
       </ResponsiveContainer>
     </header>

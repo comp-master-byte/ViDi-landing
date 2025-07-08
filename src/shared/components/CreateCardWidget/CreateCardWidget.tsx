@@ -4,6 +4,7 @@ import { Button, Title28 } from "@/shared/ui";
 import ViDi from './assets/ViDi.svg';
 import Image from "next/image";
 import classNames from "classnames";
+import { MINI_APP_TG_LINK } from "@/shared/utils";
 
 type CreateCardWidgetProps = {
   className?: string;
@@ -21,9 +22,11 @@ export const CreateCardWidget = memo(function CreateCardWidget({
       <Title28 className={styles.createCardWidgetTitle}>
         {title}
       </Title28>
-      <Button intent="secondary" className={styles.createCardWidgetButton}>
-        {buttonTitle}
-      </Button>
+      <a href={MINI_APP_TG_LINK} target="_blank">
+        <Button intent="secondary" className={styles.createCardWidgetButton}>
+          {buttonTitle}
+        </Button>
+      </a>
       <Image 
         src={ViDi} 
         alt="ViDi" 

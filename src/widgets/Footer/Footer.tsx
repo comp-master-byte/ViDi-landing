@@ -11,6 +11,7 @@ import applePayIcon from '@/shared/assets/footer/apple_pay.svg';
 import googlePayIcon from '@/shared/assets/footer/google_pay.svg';
 import vidiIcon from '@/shared/assets/footer/vidi.svg';
 import vidiLogo from '@/shared/assets/logo.svg';
+import { MINI_APP_TG_LINK, NEWS_TG, SUPPORT_TG_LINK } from "@/shared/utils";
 
 const OFERTA_NAME = 'Оферта для физ лиц ред.09.04.2025';
 const PERSONAL_DATA = 'Согласие_на_обработку_персональных_данных';
@@ -88,27 +89,33 @@ function FooterMidContentDescription() {
 function FooterRightButtons() {
   return (
     <div className={styles.footerButtons}>
-      <Button 
-        intent="secondary" 
-        startIcon={tgWhiteIcon} 
-        className={styles.footerButton}
-      >
-        Mini App
-      </Button>  
-      <Button 
-        intent="secondary" 
-        startIcon={tgWhiteIcon} 
-        className={styles.footerButton}
-      >
-        Support
-      </Button>  
-      <Button 
-        intent="secondary" 
-        startIcon={tgWhiteIcon} 
-        className={styles.footerButton}
-      >
-        News
-      </Button>  
+      <a href={MINI_APP_TG_LINK} target="_blank">
+        <Button 
+          intent="secondary" 
+          startIcon={tgWhiteIcon} 
+          className={styles.footerButton}
+        >
+          Mini App
+        </Button>  
+      </a>
+      <a href={SUPPORT_TG_LINK} target="_blank">
+        <Button 
+          intent="secondary" 
+          startIcon={tgWhiteIcon} 
+          className={styles.footerButton}
+        >
+          Support
+        </Button>  
+      </a>
+      <a href={NEWS_TG} target="_blank">
+        <Button 
+          intent="secondary" 
+          startIcon={tgWhiteIcon} 
+          className={styles.footerButton}
+        >
+          News
+        </Button>  
+      </a>
       <Button 
         intent="secondary" 
         startIcon={vidiIcon} 

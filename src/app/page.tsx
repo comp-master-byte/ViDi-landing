@@ -25,10 +25,7 @@ export default function Home() {
       </ResponsiveContainer>
       
       <CryptoLine />
-
-      <ResponsiveContainer>
-        <ESimFeatures />
-      </ResponsiveContainer>
+      <ESimFeatures />
 
       <div className={styles.container}>
         <FinanceRhythm />

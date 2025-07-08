@@ -36,6 +36,10 @@
 
 @media screen and (max-width: 480px) {
   .header {
+    padding-top: 15px;
+  }
+
+  .headerContent {
     justify-content: flex-start;
     flex-wrap: wrap;
     row-gap: 10px;

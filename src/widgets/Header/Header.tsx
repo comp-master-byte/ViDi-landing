@@ -8,19 +8,25 @@ import tgIcon from '@/shared/assets/tg_mini_app.svg';
 export const Header = memo(function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.headerLogo}>
-        <Image src={ViDiLogo} alt="ViDi" />
+      <div className="responsive">
+        <div className="container">
+          <div className={styles.headerContent}>
+            <div className={styles.headerLogo}>
+              <Image src={ViDiLogo} alt="ViDi" />
+            </div>
+            <ul className={styles.headerLinksList}>
+              <li className={styles.headerLinkItem}>Кошелек</li>
+              <li className={styles.headerLinkItem}>Виртуальная карта</li>
+              <li className={styles.headerLinkItem}>eSim</li>
+              <li className={styles.headerLinkItem}>Cashback</li>
+              <li className={styles.headerLinkItem}>Подписка</li>
+            </ul>
+            <Button startIcon={tgIcon} >
+              Mini App
+            </Button>
+          </div>
+        </div>
       </div>
-      <ul className={styles.headerLinksList}>
-        <li className={styles.headerLinkItem}>Кошелек</li>
-        <li className={styles.headerLinkItem}>Виртуальная карта</li>
-        <li className={styles.headerLinkItem}>eSim</li>
-        <li className={styles.headerLinkItem}>Cashback</li>
-        <li className={styles.headerLinkItem}>Подписка</li>
-      </ul>
-      <Button startIcon={tgIcon} >
-        Mini App
-      </Button>
     </header>
   )
 })

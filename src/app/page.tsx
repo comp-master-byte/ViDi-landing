@@ -16,13 +16,15 @@ import {
 export default function Home() {
   return (
     <div className={styles.app}>
+      <Header />
+      
       <div className={styles.responsive}>
         <div className={styles.container}>
-          <Header />
           <TravelComfort />
           <Web3Technologies />
         </div>
       </div>
+      
       <CryptoLine />
 
       <div className={styles.responsive}>

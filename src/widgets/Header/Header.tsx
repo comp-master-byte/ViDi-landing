@@ -20,7 +20,7 @@ export const Header = memo(function Header() {
     <header className={styles.header}>
       <ResponsiveContainer>
         <div className={styles.headerContent}>
-          <div className={styles.headerLogo}>
+          <div className={styles.headerLogo} onClick={() => handleScrollIntoView('travel-comfort')}>
             <Image src={ViDiLogo} alt="ViDi" />
           </div>
           <ul className={styles.headerLinksList}>

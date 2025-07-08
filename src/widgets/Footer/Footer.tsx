@@ -1,3 +1,4 @@
+'use client';
 import { memo } from "react";
 import styles from './Footer.module.css';
 import Image from "next/image";
@@ -11,30 +12,50 @@ import googlePayIcon from '@/shared/assets/footer/google_pay.svg';
 import vidiIcon from '@/shared/assets/footer/vidi.svg';
 import vidiLogo from '@/shared/assets/logo.svg';
 
+const OFERTA_NAME = 'Оферта для физ лиц ред.09.04.2025';
+const PERSONAL_DATA = 'Согласие_на_обработку_персональных_данных';
+const CONFIDENTIAL_POLITICS = 'Политика_конфиденциальности_ViDiPay';
+const CLIENT_AGREEMENT = 'Клиентское_соглашение_ViDiPay_о_соблюдении_AML_CFT';
+
 function FooterLeftButtons() {
+  function handleDownloadAndOpenFile(url: string, filename: string) {
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename.endsWith('.pdf') ? filename : `${filename}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    window.open(url, '_blank');
+  }
+
   return (
     <div className={styles.footerButtons}>
       <Button 
         intent="secondary" 
         className={styles.footerButton}
+        onClick={() => handleDownloadAndOpenFile('/files/oferta.pdf', OFERTA_NAME)}
       >
         Публичная оферта
       </Button>  
       <Button 
         intent="secondary" 
         className={styles.footerButton}
+        onClick={() => handleDownloadAndOpenFile('/files/client_agreement.pdf', CLIENT_AGREEMENT)}
       >
         Политика AML/CFT
       </Button>  
       <Button 
         intent="secondary" 
         className={styles.footerButton}
+        onClick={() => handleDownloadAndOpenFile('/files/personal_data_agreement.pdf', PERSONAL_DATA)}
       >
         Персональные данные
       </Button>  
       <Button 
         intent="secondary" 
         className={styles.footerButton}
+        onClick={() => handleDownloadAndOpenFile('/files/politics_confidentials.pdf', CONFIDENTIAL_POLITICS)}
       >
         Конфиденциальность
       </Button>  
@@ -100,6 +121,13 @@ function FooterRightButtons() {
 }
 
 export const Footer = memo(function Footer() {
+  function handleScrollIntoTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+  
   return (
     <footer className={styles.footer}>
       <div className={styles.footerTopContent}>
@@ -123,7 +151,12 @@ export const Footer = memo(function Footer() {
 
       <div className={styles.footerBottomContent}>
         <div className={styles.footerBottomLeft}>
-          <Image src={vidiLogo} alt="" className={styles.footerLogo} />
+          <Image 
+            alt="" 
+            src={vidiLogo} 
+            className={styles.footerLogo} 
+            onClick={handleScrollIntoTop}
+          />
           <Text isLight>
             ⓒ Все права защищены
           </Text>

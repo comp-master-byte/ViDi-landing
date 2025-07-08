@@ -80,7 +80,7 @@ export const ESimFeatures = memo(function eSimFeatures() {
   }, [])
 
   return (
-    <SectionLayout>
+    <SectionLayout id="eSim-features">
       <Heading 
         title="Свобода связи с eSim"
         subtitle="Ваш ключ к международному интернету"

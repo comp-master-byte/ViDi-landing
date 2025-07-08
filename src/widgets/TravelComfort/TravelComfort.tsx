@@ -9,7 +9,7 @@ import smallWebApplication from "@/shared/assets/primary_page/small_web_applicat
 
 export const TravelComfort = memo(function TravelComfort() {
   return (
-    <section className={styles.travelComfortWrapper}>
+    <section id="travel-comfort" className={styles.travelComfortWrapper}>
       <div className={styles.travelComfortLeftColumn}>
         <PrimaryTitle>Путешествуйте <br /> с комфортом</PrimaryTitle>
         <Subtitle>

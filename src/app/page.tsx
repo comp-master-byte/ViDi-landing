@@ -1,3 +1,4 @@
+import { ResponsiveContainer } from '@/shared/components';
 import styles from './app.module.css';
 import { 
   CryptoLine, 
@@ -18,41 +19,32 @@ export default function Home() {
     <div className={styles.app}>
       <Header />
       
-      <div className={styles.responsive}>
-        <div className={styles.container}>
-          <TravelComfort />
-          <Web3Technologies />
-        </div>
-      </div>
+      <ResponsiveContainer>
+        <TravelComfort />
+        <Web3Technologies />
+      </ResponsiveContainer>
       
       <CryptoLine />
 
-      <div className={styles.responsive}>
-        <div className={styles.container}>
-          {/* <ESimFeatures />
-           */}
-        </div>
-      </div>
+      <ResponsiveContainer>
+        <ESimFeatures />
+      </ResponsiveContainer>
 
       <div className={styles.container}>
         <FinanceRhythm />
       </div>
 
-      <div className={styles.responsive}>
-        <div className={styles.container}>
-          <TravelBonuses />
-          <Subscription />
-        </div>
-      </div>
+      <ResponsiveContainer>
+        <TravelBonuses />
+        <Subscription />
+      </ResponsiveContainer>
 
       <SocialMediaLine />
 
-      <div className={styles.responsive}>
-        <div className={styles.container}>
-          <FAQ />
-          <Footer />
-        </div>
-      </div>
+      <ResponsiveContainer>
+        <FAQ />
+        <Footer />
+      </ResponsiveContainer>
     </div>
   );
 }

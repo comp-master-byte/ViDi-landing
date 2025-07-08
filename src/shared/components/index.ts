@@ -5,3 +5,4 @@ export { Heading } from './Heading';
 export { SectionLayout } from './SectionLayout';
 export { CreateCardWidget } from './CreateCardWidget';
 export { Marquee } from './Marquee';
+export { ResponsiveContainer } from './ResponsiveContainer';

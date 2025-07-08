@@ -16,7 +16,7 @@ export const TravelBonuses = memo(function TravelBonuses() {
   }, [])
 
   return (
-    <SectionLayout>
+    <SectionLayout id='cashback'>
       <Heading 
         title="Бонусы за путешествия в цифровое будущее"
         subtitle="Присоединяйтесь к нам! Станьте амбассадором #Travel и вдохновляйте мир своими приключениями!"

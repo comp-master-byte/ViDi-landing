@@ -12,7 +12,7 @@ export const Subscription = memo(function Subscription() {
   }, [])
 
   return (
-    <SectionLayout>
+    <SectionLayout id='subscription'>
       <Heading 
         title="Подписка за подписку"
         subtitle="Ваш приоритетный доступ в мир блокчейн-технологий"

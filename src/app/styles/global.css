@@ -19,3 +19,7 @@ body {
 .responsive {
   padding: 0 15px;
 }
+
+[id] {
+  scroll-margin-top: 150px; /* отступ под header */
+}

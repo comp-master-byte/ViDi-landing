@@ -62,7 +62,7 @@ function CardRegistrationProcess() {
 
 export const Web3Technologies = memo(function Web3Technologies() {
   return (
-    <section className={styles.web3Technologies}>
+    <section id="web3-map" className={styles.web3Technologies}>
       <div className={styles.web3TechnologiesName}>
         <Title className={styles.web3TechnologiesTitle}>Виртуальная карта <br /> с Web3-технологиями</Title>
         <Subtitle>Ваш билет в финансовый мир</Subtitle>

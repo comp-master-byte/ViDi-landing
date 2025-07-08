@@ -10,3 +10,17 @@
 .subtitleClassName {
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 480px) {
+  .travelBonusesCardsWrapper {
+    column-gap: 9px;
+  }
+
+  .subtitleClassName {
+    margin-bottom: 14px;
+  }
+
+  .referIcon {
+    height: 152px;
+  }
+}

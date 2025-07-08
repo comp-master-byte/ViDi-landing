@@ -1,6 +1,6 @@
 import { memo, useCallback } from "react";
 import styles from './TravelBonuses.module.css';
-import { GreyCard, Heading } from "@/shared/components";
+import { GreyCard, Heading, SectionLayout } from "@/shared/components";
 import referalProgram from '@/shared/assets/travel_bonuses/referal_program.png';
 import cashback from '@/shared/assets/travel_bonuses/cashback.png';
 import Image from "next/image";
@@ -8,7 +8,7 @@ import Image from "next/image";
 export const TravelBonuses = memo(function TravelBonuses() {
 
   const renderReferalProgramImage = useCallback(() => {
-    return <Image src={referalProgram} alt="" />
+    return <Image className={styles.referIcon} src={referalProgram} alt="" />
   }, [])
 
   const renderCashbackImage = useCallback(() => {
@@ -16,7 +16,7 @@ export const TravelBonuses = memo(function TravelBonuses() {
   }, [])
 
   return (
-    <section className={styles.travelBonusesWrapper}>
+    <SectionLayout>
       <Heading 
         title="Бонусы за путешествия в цифровое будущее"
         subtitle="Присоединяйтесь к нам! Станьте амбассадором #Travel и вдохновляйте мир своими приключениями!"
@@ -36,6 +36,6 @@ export const TravelBonuses = memo(function TravelBonuses() {
           subtitleClassName={styles.subtitleClassName}
         />
       </div>
-    </section>
+    </SectionLayout>
   )
 })

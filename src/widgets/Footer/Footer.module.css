@@ -58,7 +58,8 @@
 .footerBottomRight {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footerMobileTopContent {
@@ -127,5 +128,9 @@
   .paymentCard {
     width: 46px;
     height: 32px;
+  }
+
+  .footerBottomRight {
+    gap: 8px;
   }
 }

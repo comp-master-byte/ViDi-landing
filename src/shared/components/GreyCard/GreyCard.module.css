@@ -41,4 +41,16 @@
     margin-top: 8px;
     margin-bottom: 12px;
   }
+
+  .greyCardTitleIconWrapper {
+    min-width: 29px;
+    height: 29px;
+    padding: 0;
+    margin-right: 8px;
+  }
+
+  .greyCardTitleIconWrapper > img {
+    width: 17px;
+    height: 17px;
+  }
 }

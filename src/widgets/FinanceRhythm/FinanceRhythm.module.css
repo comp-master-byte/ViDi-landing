@@ -10,3 +10,34 @@
 .payQrCodeCardTitle {
   white-space: pre;
 }
+
+.financeRhythmSliderWrapper {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .financeRhythmCards {
+    display: none;
+  }
+
+  .financeCardSlider {
+    padding: 0;
+    height: 287px;
+    overflow: hidden;
+  }
+
+  .financeCardSliderHeading {
+    padding: 14px 14px 0 14px;
+  }
+
+  .financeCardSliderSubtitle {
+    padding: 0 14px 0 14px;
+    margin-bottom: 19px;
+  }
+
+  .financeCardImg {
+    width: 128px;
+    height: 195px;
+    margin: 0 12px;
+  }
+}

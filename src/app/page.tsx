@@ -24,11 +24,21 @@ export default function Home() {
         </div>
       </div>
       <CryptoLine />
+
       <div className={styles.responsive}>
         <div className={styles.container}>
           {/* <ESimFeatures />
-          <FinanceRhythm />
-          <TravelBonuses /> */}
+           */}
+        </div>
+      </div>
+
+      <div className={styles.container}>
+        <FinanceRhythm />
+      </div>
+
+      <div className={styles.responsive}>
+        <div className={styles.container}>
+          <TravelBonuses />
           <Subscription />
         </div>
       </div>

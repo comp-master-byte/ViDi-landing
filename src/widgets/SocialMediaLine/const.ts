@@ -7,7 +7,6 @@ import canva from '@/shared/assets/icons/social_media_logos/canva.svg';
 import appStore from '@/shared/assets/icons/social_media_logos/appStore.svg';
 import miro from '@/shared/assets/icons/social_media_logos/miro.svg';
 import booking from '@/shared/assets/icons/social_media_logos/booking.svg';
-import iMove from '@/shared/assets/icons/social_media_logos/iMove.svg';
 
 export const SOCIAL_MEDIA = [
   {id: 1, icon: googlePlay, bgColor: '#ECECEC'},
@@ -19,5 +18,4 @@ export const SOCIAL_MEDIA = [
   {id: 7, icon: appStore, fullIcon: true},
   {id: 8, icon: miro, bgColor: '#FECF43'},
   {id: 9, icon: booking, bgColor: '#103D7A'},
-  {id: 10, icon: iMove, fullIcon: true},
 ]

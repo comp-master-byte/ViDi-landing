@@ -7,3 +7,9 @@
 .responsive {
   padding: 0 15px;
 }
+
+@media screen and (max-width: 1031px) {
+  .container {
+    max-width: 345px;
+  }
+}

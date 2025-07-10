@@ -79,22 +79,11 @@
   display: none;
 }
 
-@media screen and (max-width: 480px) {
-  .eSimFeaturesTopListCards {
-    display: none;
-  }
-
-  .eSimFeaturesSwiper {
-    display: block;
-    height: 184px;
-    margin-bottom: 20px;
-  }
-
+@media screen and (max-width: 1192px) {
   .eSimFeaturesCards {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 9px;
   }
 
   .eSimFeaturesCard4 {
@@ -112,13 +101,38 @@
   .eSimFeaturesCard6 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    height: 152px;
   }
 
   .eSimFeaturesCard7 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    height: 152px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1031px) {
+  .swiperWrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .eSimFeaturesTopListCards {
+    display: none;
+  }
+
+  .eSimFeaturesSwiper {
+    display: block;
+    height: 184px;
+    margin-bottom: 20px;
+  }
+
+  .eSimFeaturesCards {
+    gap: 9px;
+  }
+
+  .eSimFeaturesCard6,
+  .eSimFeaturesCard7 {
+    height: auto;
   }
 
   /* Slider */

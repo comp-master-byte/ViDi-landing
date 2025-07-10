@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './Button.module.css';
 import classNames from 'classnames';
 
-type ButtonIntent = 'primary' | 'secondary' | 'white';
+type ButtonIntent = 'primary' | 'secondary' | 'dark-secondary' | 'white';
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -26,7 +26,8 @@ export function Button({
       onClick={onClick}
       className={classNames(styles.button, className, {
         [styles.primary]: intent === 'primary',
-        [styles.secondary]: intent === 'secondary',
+        [styles.secondary]: intent === 'secondary' || intent === 'dark-secondary',
+        [styles.darkSecondary]: intent === 'dark-secondary',
         [styles.active]: isActive,
         [styles.buttonWithIcon]: startIcon
       })}

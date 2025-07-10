@@ -12,7 +12,7 @@ export const TravelBonuses = memo(function TravelBonuses() {
   }, [])
 
   const renderCashbackImage = useCallback(() => {
-    return <Image src={cashback} alt="" />
+    return <Image className={styles.cashbackImg} src={cashback} alt="" />
   }, [])
 
   return (
@@ -31,7 +31,7 @@ export const TravelBonuses = memo(function TravelBonuses() {
         />
         <GreyCard 
           title="CashBack Star до 5%"
-          subtitle="Оплачивайте покупки за границей нашими картами VISA или MasterCard, подключайте eSIM для интернета и зарабатывайте больше Stars на свой Telegram-аккаунт."
+          subtitle={`Оплачивайте покупки за границей нашими картами VISA\n или MasterCard, подключайте eSIM для интернета и зарабатывайте больше Stars на свой Telegram-аккаунт.`}
           renderEndSlot={renderCashbackImage}
           subtitleClassName={styles.subtitleClassName}
         />

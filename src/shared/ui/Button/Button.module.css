@@ -73,6 +73,11 @@
   background-color: #0069F6;
 }
 
+.darkSecondary:hover {
+  background-color: #01349B;
+  border: 1px solid #01349B;
+}
+
 /* Аналогична secondary, но без границы */
 .white {
   border: none;
@@ -86,7 +91,7 @@
 .active:hover {
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1031px) {
   .button {
     height: 30px;
     border-radius: 10px;

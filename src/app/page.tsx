@@ -24,7 +24,7 @@ export default function Home() {
         <Web3Technologies />
       </ResponsiveContainer>
       
-      <CryptoLine />
+     <CryptoLine />
       <ESimFeatures />
 
       <div className={styles.container}>
@@ -41,7 +41,7 @@ export default function Home() {
       <ResponsiveContainer>
         <FAQ />
         <Footer />
-      </ResponsiveContainer>
+      </ResponsiveContainer> 
     </div>
   );
 }

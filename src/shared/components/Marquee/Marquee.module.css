@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1031px) {
   .marqueeItem {
     margin: 0 10px;
     width: 40px;

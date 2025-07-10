@@ -15,7 +15,12 @@
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1031px) {
+  .sliderWrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
   .financeRhythmCards {
     display: none;
   }

@@ -23,7 +23,10 @@ export const CreateCardWidget = memo(function CreateCardWidget({
         {title}
       </Title28>
       <a href={MINI_APP_TG_LINK} target="_blank">
-        <Button intent="secondary" className={styles.createCardWidgetButton}>
+        <Button 
+          intent="dark-secondary" 
+          className={styles.createCardWidgetButton}
+        >
           {buttonTitle}
         </Button>
       </a>

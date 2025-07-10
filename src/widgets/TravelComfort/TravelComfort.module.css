@@ -29,9 +29,29 @@
   display: none;
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1441px) {
   .travelComfortWrapper {
+    position: relative;
+  }
+
+  .webApplication {
+    top: 0;
+    right: -122px;
+  }
+}
+
+@media screen and (min-width: 1032px) and (max-width: 1312px) {
+  .webApplication {
+    width: 43%;
+    top: 20%;
+  }
+}   
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1031px) {
+  .travelComfortWrapper {
+    position: relative;
     height: 250px;
     margin-top: 16px;
     align-items: flex-start;
@@ -54,7 +74,17 @@
   .smallWebApplication {
     display: inline-block;
     position: absolute;
-    top: 108px;
+    top: 0;
     right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .travelComfortWrapper {
+    position: static;
+  }
+
+  .smallWebApplication {
+    top: 108px;
   }
 }

@@ -21,10 +21,11 @@
   height: 31px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1031px) {
   .benifitsListWrapper {
     row-gap: 4px;
     width: calc(50% - 4px);
+    justify-content: space-between;
   }
 
   .benifitListItemWrapper {

@@ -34,42 +34,44 @@ function ESimFeaturesMobileSwiper({
   eSimFeaturesList
 }: ESimFeaturesMobileSwiperProps) {
   return (
-    <Swiper
-      modules={[Pagination]}
-      slidesPerView={2.5}
-      spaceBetween={8}
-      pagination={{
-        clickable: true
-      }}
-      className={styles.eSimFeaturesSwiper}
-      breakpoints={{
-        410: {
-          slidesPerView: 2.5,
-          spaceBetween: 9
-        },
-        350: {
-          slidesPerView: 2.2,
-          spaceBetween: 9
-        },
-        310: {
-          slidesPerView: 2.2,
-          spaceBetween: 9
-        }
-      }}
-    >
-      {eSimFeaturesList.map((eSimfFeatureItem) => (
-        <SwiperSlide>
-          <GreyCard 
-            key={eSimfFeatureItem.id} 
-            {...eSimfFeatureItem} 
-            startIconBg="linear-gradient(#4482FF, #294E99)"
-            className={styles.eSimFeaturesTopCard}
-            titleClassName={styles?.titleClassName}
-            headingClassName={styles.eSimFeaturesCardHeading}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={styles.swiperWrapper}>
+      <Swiper
+        modules={[Pagination]}
+        slidesPerView={2.5}
+        spaceBetween={8}
+        pagination={{
+          clickable: true
+        }}
+        className={styles.eSimFeaturesSwiper}
+        breakpoints={{
+          410: {
+            slidesPerView: 2.5,
+            spaceBetween: 9
+          },
+          350: {
+            slidesPerView: 2.2,
+            spaceBetween: 9
+          },
+          310: {
+            slidesPerView: 2.2,
+            spaceBetween: 9
+          }
+        }}
+      >
+        {eSimFeaturesList.map((eSimfFeatureItem) => (
+          <SwiperSlide>
+            <GreyCard 
+              key={eSimfFeatureItem.id} 
+              {...eSimfFeatureItem} 
+              startIconBg="linear-gradient(#4482FF, #294E99)"
+              className={styles.eSimFeaturesTopCard}
+              titleClassName={styles?.titleClassName}
+              headingClassName={styles.eSimFeaturesCardHeading}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   )
 }
 

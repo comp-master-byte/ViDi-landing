@@ -79,7 +79,7 @@
 .registrationProcess__3 {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
-  max-height: 338px;
+  max-height: auto;
 }
 
 .registrationProcess__4 {
@@ -98,7 +98,36 @@
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1192px) {
+.cardRegistrationProcessWrapper {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    max-height: fit-content;
+  }
+
+  .registrationProcess__1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .registrationProcess__2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .registrationProcess__3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .registrationProcess__4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1031px) {
   .web3Technologies {
     margin-top: 40px;
   } 
@@ -143,15 +172,11 @@
   }
 
   .registrationProcess__1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     height: 259px;
     overflow: hidden;
   }
 
   .registrationProcess__2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
     height: 259px;
     overflow: hidden;
   }
@@ -162,14 +187,7 @@
   }
 
   .registrationProcess__3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
     max-height: 146px;
-  }
-
-  .registrationProcess__4 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
   }
 
   .web3TechnologiesBankCard {

@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1031px) {
   .createCardWidgetWrapper {
     padding: 14px;
     height: 146px;

@@ -17,7 +17,7 @@
   background-color: #D9E9FF;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1031px) {
   .paymentButton {
     height: 21px;
     border-radius: 8px;

@@ -33,48 +33,50 @@ function FinanceRhythmSlider({
   cardsList
 }: FinanceRhythmSliderProps) {
   return (
-    <Swiper 
-      modules={[Pagination]}
-      spaceBetween={9}
-      slidesPerView={2.5}
-      className={styles.financeRhythmSliderWrapper}
-      pagination={{
-        clickable: true,
-      }}
-      breakpoints={{
-        410: {
-          slidesPerView: 2.5,
-          spaceBetween: 9
-        },
-        350: {
-          slidesPerView: 2.2,
-          spaceBetween: 9
-        },
-        310: {
-          slidesPerView: 2.2,
-          spaceBetween: 9
-        }
-      }}
-    >
-      {cardsList.map((financeCardItem) => (
-        <SwiperSlide
-          className={styles.financeRhythmSwiperSlide}
-        >
-          <GreyCard 
-            key={financeCardItem.id}
-            title={financeCardItem.title}
-            subtitle={financeCardItem.subtitle}
-            startIcon={financeCardItem.startIcon}
-            startIconBg={financeCardItem.startIconBg}
-            renderEndSlot={financeCardItem.renderImg}
-            titleClassName={financeCardItem?.titleClassName}
-            headingClassName={styles.financeCardSliderHeading}
-            subtitleClassName={styles.financeCardSliderSubtitle}
-            className={styles.financeCardSlider}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={styles.sliderWrapper}>
+      <Swiper 
+        modules={[Pagination]}
+        spaceBetween={9}
+        slidesPerView={2.5}
+        className={styles.financeRhythmSliderWrapper}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          410: {
+            slidesPerView: 2.5,
+            spaceBetween: 9
+          },
+          350: {
+            slidesPerView: 2.2,
+            spaceBetween: 9
+          },
+          310: {
+            slidesPerView: 2.2,
+            spaceBetween: 9
+          }
+        }}
+      >
+        {cardsList.map((financeCardItem) => (
+          <SwiperSlide
+            className={styles.financeRhythmSwiperSlide}
+          >
+            <GreyCard 
+              key={financeCardItem.id}
+              title={financeCardItem.title}
+              subtitle={financeCardItem.subtitle}
+              startIcon={financeCardItem.startIcon}
+              startIconBg={financeCardItem.startIconBg}
+              renderEndSlot={financeCardItem.renderImg}
+              titleClassName={financeCardItem?.titleClassName}
+              headingClassName={styles.financeCardSliderHeading}
+              subtitleClassName={styles.financeCardSliderSubtitle}
+              className={styles.financeCardSlider}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   )
 }
 

@@ -14,6 +14,15 @@
   cursor: pointer;
 }
 
+.tgIcon {
+  color: #3D74E4;
+  transition: color 0.3s ease;
+}
+
+.primary:hover .tgIcon {
+  color: #01349B;
+}
+
 .buttonWithIcon {
   justify-content: flex-start;
 }

@@ -7,6 +7,7 @@ import { Button } from "@/shared/ui";
 import tgIcon from '@/shared/assets/tg_mini_app.svg';
 import { ResponsiveContainer } from "@/shared/components";
 import { MINI_APP_TG_LINK } from "@/shared/utils";
+import { TgButtonIcon } from "./icons";
 
 export const Header = memo(function Header() {
 
@@ -15,6 +16,10 @@ export const Header = memo(function Header() {
     if(el) {
       el.scrollIntoView({behavior: 'smooth'})
     }
+  }
+
+  function renderTgIcon() {
+    return <TgButtonIcon />
   }
 
   return (
@@ -57,7 +62,7 @@ export const Header = memo(function Header() {
             </li>
           </ul>
           <a href={MINI_APP_TG_LINK} target="_blank">
-            <Button startIcon={tgIcon}>
+            <Button renderIcon={renderTgIcon}>
               Mini App
             </Button>
           </a>

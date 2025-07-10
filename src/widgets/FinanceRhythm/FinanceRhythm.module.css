@@ -27,6 +27,7 @@
 
   .financeCardSlider {
     padding: 0;
+    min-width: 150px;
     height: 287px;
     overflow: hidden;
   }

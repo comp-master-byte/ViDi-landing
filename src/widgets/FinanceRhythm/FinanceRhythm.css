@@ -4,7 +4,7 @@
 }
 
 .swiper .swiper-pagination {
-  /* bottom: -6px; */
+  bottom: -6px;
 }
 
 .swiper-pagination-bullet {
@@ -21,10 +21,5 @@
   .swiper {
     display: block;
     height: 313px;
-  }
-
-  .swiper .swiper-slide {
-    min-width: 150px;
-    min-height: 287px;
   }
 }

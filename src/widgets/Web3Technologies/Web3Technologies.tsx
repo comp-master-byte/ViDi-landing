@@ -4,7 +4,6 @@ import { Subtitle, Subtitle16, Title, Title28 } from "@/shared/ui";
 import { COUNTRIES } from "./consts";
 import Image from "next/image";
 import bankCard from '@/shared/assets/virtual_web3_map/my_bank_card.png';
-import smallBankCard from '@/shared/assets/virtual_web3_map/small_bank_card.png';
 import countriesMap from '@/shared/assets/virtual_web3_map/countries_map.png';
 import { CreateCardWidget, GreyCard } from "@/shared/components";
 import { PaymentButton } from "./components";
@@ -87,11 +86,6 @@ export const Web3Technologies = memo(function Web3Technologies() {
           src={bankCard} 
           alt="bankCard" 
           className={styles.web3TechnologiesBankCard}
-        />
-        <Image
-          src={smallBankCard}
-          alt='smallBankCard'
-          className={styles.smallWeb3TechnologiesBankCard}
         />
         <Image 
           src={countriesMap} 

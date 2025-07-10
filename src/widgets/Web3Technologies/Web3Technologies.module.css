@@ -191,12 +191,8 @@
   }
 
   .web3TechnologiesBankCard {
-    display: none;
-  }
-
-  .smallWeb3TechnologiesBankCard {
-    display: inline-block;
-    align-self: flex-end;
+    width: 128px;
+    /* display: none; */
   }
 
   .web3TechnologiesCountriesMap {

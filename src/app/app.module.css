@@ -11,3 +11,9 @@
 .responsive {
   padding: 0 15px;
 }
+
+@media screen and (max-width: 480px) {
+  .app {
+    overflow: hidden;
+  }
+}

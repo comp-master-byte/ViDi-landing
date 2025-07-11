@@ -27,7 +27,7 @@ export const TravelComfort = memo(function TravelComfort() {
       </div> 
       
       <Image className={styles.webApplication} src={webApplication} alt="" />
-      {/* <Image className={styles.smallWebApplication} src={smallWebApplication} alt="" /> */}
+      <Image className={styles.smallWebApplication} src={smallWebApplication} alt="" />
     </section>
   )
 })

@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 1192px) {
-.cardRegistrationProcessWrapper {
+  .cardRegistrationProcessWrapper {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     max-height: fit-content;
@@ -166,9 +166,10 @@
 
   .cardRegistrationProcessWrapper {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    max-height: 414px;
+    grid-template-rows: repeat(2, auto);
+    max-height: fit-content;
     gap: 9px;
+    margin-top: 9px;
   }
 
   .registrationProcess__1 {
@@ -187,7 +188,7 @@
   }
 
   .registrationProcess__3 {
-    max-height: 146px;
+    padding: 14px;
   }
 
   .web3TechnologiesBankCard {

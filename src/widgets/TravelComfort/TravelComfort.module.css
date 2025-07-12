@@ -29,6 +29,10 @@
   display: none;
 }
 
+.mobileSubtitleBr {
+  display: none;
+}
+
 @media screen and (min-width: 1441px) {
   .travelComfortWrapper {
     position: relative;
@@ -61,6 +65,7 @@
   .travelComfortLeftColumn {
     row-gap: 14px;
     max-width: 170px;
+    margin-top: 27px;
   }
 
   .paymentWaysList {
@@ -75,8 +80,16 @@
   .smallWebApplication {
     display: inline-block;
     position: absolute;
-    top: 0;
-    right: -184px;
+    top: 26px;
+    right: -160px;
+  }
+
+  .travelComfortOverflowWrapper {
+    overflow: hidden;
+  }
+
+  .mobileSubtitleBr {
+    display: block;
   }
 }
 
@@ -84,11 +97,8 @@
   .travelComfortWrapper {
     overflow-x: visible;
   }
-  .travelComfortOverflowWrapper {
-    overflow: hidden;
-  }
+
   .smallWebApplication {
-    top: 0;
-    right: -160px;
+    right: -188px;
   }
 }

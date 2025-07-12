@@ -9,13 +9,13 @@ import smallWebApplication from "@/shared/assets/primary_page/small_web_applicat
 
 export const TravelComfort = memo(function TravelComfort() {
   return (
-    <div className={styles.travelComfortOverflowWrapper}>
+    <div  className={styles.travelComfortOverflowWrapper}>
       <ResponsiveContainer>
         <section id="travel-comfort" className={styles.travelComfortWrapper}>
           <div className={styles.travelComfortLeftColumn}>
             <PrimaryTitle>Путешествуйте <br /> с комфортом</PrimaryTitle>
             <Subtitle>
-              Ваш финансовый компас для надежной связи и удобных <br /> валютных платежей по карте в любой стране.
+              Ваш финансовый компас для надежной связи и удобных <br /> валютных платежей <br className={styles.mobileSubtitleBr} /> по карте в любой стране.
             </Subtitle>
             <div className={styles.paymentWaysList}>
               {PAYMENT_WAYS.map((paymentWay) => (

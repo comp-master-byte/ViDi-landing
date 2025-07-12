@@ -26,10 +26,6 @@ body {
 
 @media screen and (max-width: 1031px) {
   [id] {
-    scroll-margin-top: 20px;
-  }
-
-  #travel-comfort {
     scroll-margin-top: 106px;
   }
 }

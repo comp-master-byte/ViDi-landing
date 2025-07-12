@@ -8,10 +8,21 @@ import { ResponsiveContainer } from "@/shared/components";
 import { MINI_APP_TG_LINK } from "@/shared/utils";
 import { TgButtonIcon } from "./icons";
 
+type ScrollSectionId = 'travel-comfort' | 'web3-map' | 'eSim-features' | 'cashback' | 'subscription';
+
 export const Header = memo(function Header() {
 
-  function handleScrollIntoView(id: string) {
+  function handleScrollIntoView(id: ScrollSectionId) {
     const node = document.getElementById(id);
+    
+    if(id === 'travel-comfort') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+      return;
+    }
+
     if(node) {
       node.scrollIntoView({behavior: 'smooth'});
     }

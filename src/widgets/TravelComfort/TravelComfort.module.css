@@ -1,9 +1,10 @@
 .travelComfortWrapper {
   height: 573px;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   column-gap: 30px;
+  position: relative;
 }
 
 .travelComfortLeftColumn {
@@ -53,7 +54,7 @@
   .travelComfortWrapper {
     position: relative;
     height: 250px;
-    margin-top: 16px;
+    margin-top: 8px;
     align-items: flex-start;
     overflow-x: hidden;
   }

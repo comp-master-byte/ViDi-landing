@@ -5,6 +5,7 @@
   z-index: 2;
   background-color: #fff;
   padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .headerContent {
@@ -37,6 +38,7 @@
 @media screen and (max-width: 1031px) {
   .header {
     padding-top: 15px;
+    padding-bottom: 8px;
   }
 
   .headerContent {
@@ -62,8 +64,5 @@
     padding-top: 10px;
     width: 100%;
     justify-content: space-between;
-  }
-
-  .headerLinkItem {
   }
 }

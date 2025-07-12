@@ -4,7 +4,6 @@ import styles from './Header.module.css';
 import Image from "next/image";
 import ViDiLogo from '@/shared/assets/logo.svg';
 import { Button } from "@/shared/ui";
-import tgIcon from '@/shared/assets/tg_mini_app.svg';
 import { ResponsiveContainer } from "@/shared/components";
 import { MINI_APP_TG_LINK } from "@/shared/utils";
 import { TgButtonIcon } from "./icons";
@@ -12,9 +11,9 @@ import { TgButtonIcon } from "./icons";
 export const Header = memo(function Header() {
 
   function handleScrollIntoView(id: string) {
-    const el = document.getElementById(id);
-    if(el) {
-      el.scrollIntoView({behavior: 'smooth'})
+    const node = document.getElementById(id);
+    if(node) {
+      node.scrollIntoView({behavior: 'smooth'});
     }
   }
 

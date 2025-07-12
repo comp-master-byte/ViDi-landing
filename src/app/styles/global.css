@@ -21,5 +21,11 @@ body {
 }
 
 [id] {
-  scroll-margin-top: 150px; /* отступ под header */
+  scroll-margin-top: 150px;
+}
+
+@media screen and (max-width: 1031px) {
+  [id] {
+    scroll-margin-top: 106px;
+  }
 }

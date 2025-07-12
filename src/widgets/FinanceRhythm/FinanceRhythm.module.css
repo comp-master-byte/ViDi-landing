@@ -11,8 +11,9 @@
   white-space: pre;
 }
 
-.financeRhythmSliderWrapper {
+.sliderWrapper .financeRhythmSliderWrapper {
   display: none;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 1031px) {

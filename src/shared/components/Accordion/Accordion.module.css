@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 30px;
 }
 
 .accordionIconWrapper {
@@ -66,6 +67,7 @@
 
   .accordionHeader {
     padding: 8px;
+    column-gap: 8px;
   }
 
   .accordionIconWrapper {

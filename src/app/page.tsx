@@ -40,8 +40,9 @@ export default function Home() {
     <div className={styles.app}>
       <Header />
       
+      <TravelComfort />
+      
       <ResponsiveContainer>
-        <TravelComfort />
         <Web3Technologies />
       </ResponsiveContainer>
       

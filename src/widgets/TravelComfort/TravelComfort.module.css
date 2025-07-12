@@ -84,7 +84,11 @@
   .travelComfortWrapper {
     overflow-x: visible;
   }
+  .travelComfortOverflowWrapper {
+    overflow: hidden;
+  }
   .smallWebApplication {
     top: 0;
+    right: -160px;
   }
 }

@@ -20,6 +20,11 @@
     max-width: 500px;
     margin: 0 auto;
   }
+
+  .sliderWrapper .financeRhythmSliderWrapper {
+    display: block;
+    height: 313px;
+  }
   
   .financeRhythmCards {
     display: none;

@@ -16,10 +16,3 @@
 .swiper-pagination-bullet-active {
   background-color: #3D74E3;
 }
-
-@media screen and (max-width: 1031px) {
-  .swiper {
-    display: block;
-    height: 313px;
-  }
-}

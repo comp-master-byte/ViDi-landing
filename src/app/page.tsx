@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: `Global eSim в 150+ странах\n Virtual Card с выгодным курсом\n USDT платежи по QR SBP\n Путешествуй с комфортом!`,
     images: [
       {
-        url: '/about-us-og-image.png', 
+        url: 'https://vidi-two.vercel.app/og-image.png', 
         width: 1200,
         height: 630,
       },

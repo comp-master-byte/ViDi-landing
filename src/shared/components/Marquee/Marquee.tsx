@@ -29,13 +29,6 @@ export const Marquee = memo(function Marquee({
             className={styles.marqueeItem}
             alt=""
           />
-          // <IconCard
-          //   key={`${item.id}-${index}`}
-          //   icon={item.icon}
-          //   bgColor={item.bgColor}
-          //   fullIcon={item.fullIcon}
-          //   className={styles.marqueeItem}
-          // />
         ))}
       </FastMarquee>
     </>

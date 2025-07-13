@@ -19,7 +19,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   openGraph: {
     title: 'ViDiPay открывает горизонты!',
-    description: `Global eSim в 150+ странах\n Virtual Card с выгодным курсом\n USDT платежи по QR SBP\n Путешествуй с комфортом!`,
+    description: `Global eSim в 150+ странах\nVirtual Card с выгодным курсом\nUSDT платежи по QR SBP\nПутешествуй с комфортом!`,
     images: [
       {
         url: 'https://vidi-two.vercel.app/og-image.png', 

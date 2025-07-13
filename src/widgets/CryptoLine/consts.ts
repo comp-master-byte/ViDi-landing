@@ -9,13 +9,13 @@ import solana from '@/shared/assets/icons/crypto_logos/solana.svg';
 import bitcoin from '@/shared/assets/icons/crypto_logos/bitcoin.svg';
 
 export const CRYPTO_LOGOS = [
-  {id: 1, icon: tether, bgColor: 'rgba(0, 164, 120, 0.2)'},
-  {id: 2, icon: binanceCoin, bgColor: 'rgba(255, 237, 138, 0.2)'},
-  {id: 3, icon: tron, bgColor: 'rgba(238, 123, 159, 0.2)'},
-  {id: 4, icon: ethereum, bgColor: 'rgba(148, 177, 222, 0.2)'},
-  {id: 5, icon: toncoin, bgColor: 'rgba(148, 177, 222, 0.2)'},
-  {id: 6, icon: litecoin, bgColor: 'rgba(148, 177, 222, 0.2)'},
-  {id: 7, icon: deadDog, fullIcon: true},
-  {id: 8, icon: solana, bgColor: 'rgba(135, 121, 183, 0.2)'},
-  {id: 9, icon: bitcoin, bgColor: 'rgba(243, 147, 33, 0.2)'},
+  {id: 1, icon: tether},
+  {id: 2, icon: binanceCoin},
+  {id: 3, icon: tron},
+  {id: 4, icon: ethereum,},
+  {id: 5, icon: toncoin},
+  {id: 6, icon: litecoin},
+  {id: 7, icon: deadDog},
+  {id: 8, icon: solana},
+  {id: 9, icon: bitcoin},
 ]

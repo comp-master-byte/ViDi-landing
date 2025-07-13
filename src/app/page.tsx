@@ -46,7 +46,7 @@ export default function Home() {
         <Web3Technologies />
       </ResponsiveContainer>
       
-      {/* <CryptoLine /> */}
+      <CryptoLine />
       <ESimFeatures />
 
       <div className={styles.container}>

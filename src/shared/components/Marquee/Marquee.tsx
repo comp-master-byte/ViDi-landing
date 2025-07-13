@@ -1,6 +1,5 @@
 import { memo } from "react";
 import styles from './Marquee.module.css';
-import { IconCard } from "../IconCard";
 import FastMarquee from "react-fast-marquee";
 import Image from "next/image";
 
@@ -18,20 +17,16 @@ export const Marquee = memo(function Marquee({
   list
 }: MarqueeProps) {
   return (
-    <>
-      <FastMarquee>
-        {list.map((item, index) => (
-          <Image 
-            key={`${item.id}-${index}`} 
-            width={80} 
-            height={80} 
-            src={item.icon} 
-            className={styles.marqueeItem}
-            loading="eager"
-            alt=""
-          />
-        ))}
-      </FastMarquee>
-    </>
+    <FastMarquee speed={50}>
+      {[...list, ...list].map((item, index) => (
+        <Image 
+          key={`${item.id}-${index}`} 
+          src={item.icon} 
+          className={styles.marqueeItem}
+          loading="eager"
+          alt=""
+        />
+      ))}
+    </FastMarquee>
   )
 })

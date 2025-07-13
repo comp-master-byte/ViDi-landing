@@ -1,6 +1,7 @@
 .marqueeItem {
   width: 80px;
   height: 80px;
+  margin: 0 40px;
 }
 
 @media screen and (max-width: 1031px) {

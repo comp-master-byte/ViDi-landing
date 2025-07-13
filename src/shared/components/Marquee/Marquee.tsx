@@ -27,6 +27,7 @@ export const Marquee = memo(function Marquee({
             height={80} 
             src={item.icon} 
             className={styles.marqueeItem}
+            loading="eager"
             alt=""
           />
         ))}

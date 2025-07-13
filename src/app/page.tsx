@@ -18,8 +18,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   openGraph: {
-    title: 'About Us',
-    description: 'Learn more about our company',
+    title: 'ViDiPay открывает горизонты!',
+    description: `Global eSim в 150+ странах\n Virtual Card с выгодным курсом\n USDT платежи по QR SBP\n Путешествуй с комфортом!`,
     images: [
       {
         url: '/about-us-og-image.png', 

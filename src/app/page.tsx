@@ -14,24 +14,19 @@ import {
   Web3Technologies 
 } from "@/widgets";
 
-export const metadata = {
-  title: 'ViDiPay открывает горизонты!',
-  description: `Global eSim в 150+ странах\n Virtual Card с выгодным курсом\n USDT платежи по QR SBP`,
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
   openGraph: {
-    title: 'ViDiPay открывает горизонты!',
-    description: `Global eSim в 150+ странах\n Virtual Card с выгодным курсом\n USDT платежи по QR SBP`,
-    url: 'ViDiPay открывает горизонты!',
-    siteName: 'ViDi',
+    title: 'About Us',
+    description: 'Learn more about our company',
     images: [
       {
-        url: 'https://vidi.vercel.app/url_preview.png',
-        width: 1200,  
+        url: '/about-us-og-image.png', 
+        width: 1200,
         height: 630,
-        alt: 'ViDiPay Card',
       },
     ],
-    locale: 'ru_RU',
-    type: 'website',
   },
 };
 

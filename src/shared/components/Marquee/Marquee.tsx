@@ -2,6 +2,7 @@ import { memo } from "react";
 import styles from './Marquee.module.css';
 import { IconCard } from "../IconCard";
 import FastMarquee from "react-fast-marquee";
+import Image from "next/image";
 
 type MarqueeItem = {
   id: number | string;
@@ -18,30 +19,23 @@ export const Marquee = memo(function Marquee({
 }: MarqueeProps) {
   return (
     <>
-      {/* <div className={styles.marquee}>
-        <div className={styles.marqueeContent}>
-          {[...list, ...list, ...list].map((item, index) => (
-            <IconCard
-              key={`${item.id}-${index}`}
-              icon={item.icon}
-              bgColor={item.bgColor}
-              fullIcon={item.fullIcon}
-              className={styles.marqueeItem}
-            />
-          ))}
-        </div>
-      </div>
-     */}
-
       <FastMarquee>
         {list.map((item, index) => (
-          <IconCard
-            key={`${item.id}-${index}`}
-            icon={item.icon}
-            bgColor={item.bgColor}
-            fullIcon={item.fullIcon}
+          <Image 
+            key={`${item.id}-${index}`} 
+            width={80} 
+            height={80} 
+            src={item.icon} 
             className={styles.marqueeItem}
+            alt=""
           />
+          // <IconCard
+          //   key={`${item.id}-${index}`}
+          //   icon={item.icon}
+          //   bgColor={item.bgColor}
+          //   fullIcon={item.fullIcon}
+          //   className={styles.marqueeItem}
+          // />
         ))}
       </FastMarquee>
     </>

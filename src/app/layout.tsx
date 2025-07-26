@@ -22,10 +22,9 @@ export default function RootLayout({
     return () => clearTimeout(timer);
   }, []);
 
-
   return (
     <html lang="en" className={manrope.className}>
-      <body>
+      <body style={{overflow: loading ? 'hidden' : 'auto'}}>
         <Script
           strategy="afterInteractive"
           src="https://mc.yandex.ru/metrika/tag.js"
@@ -61,7 +60,9 @@ export default function RootLayout({
             />
           </div>
         </noscript>
-        {loading ? <Loader /> : children}
+        {loading && <Loader />}
+        {children}
+        {/* {loading ? <Loader /> : children} */}
       </body>
     </html>
   );

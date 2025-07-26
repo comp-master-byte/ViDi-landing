@@ -186,7 +186,7 @@ export const ESimFeatures = memo(function eSimFeatures() {
             className={styles.eSimFeaturesCard5}
           />
           <GreyCard 
-            title={`Поддержка\n 24/71`}
+            title={`Поддержка\n 24/7`}
             startIcon={clock}
             startIconBg="linear-gradient(#4482FF, #294E99)"
             renderEndSlot={renderSupportIcon}

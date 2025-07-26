@@ -11,6 +11,7 @@ import createCardInApp from '@/shared/assets/virtual_web3_map/create_card_in_app
 import topUpCard from '@/shared/assets/virtual_web3_map/top_up_card_with_wallet.png';
 import googlePAy from '@/shared/assets/virtual_web3_map/icons/google_pay.svg';
 import applePay from '@/shared/assets/virtual_web3_map/icons/apple_pay.svg';
+import voiceSvg from '@/shared/assets/virtual_web3_map/icons/voice.svg';
 
 function CardRegistrationProcess() {
   const renderCreateCardInAppIcon = useCallback(() => {
@@ -82,11 +83,18 @@ export const Web3Technologies = memo(function Web3Technologies() {
             ))}
           </div>
         </div>
-        <Image 
-          src={bankCard} 
-          alt="bankCard" 
-          className={styles.web3TechnologiesBankCard}
-        />
+        <div className={styles.web3TechnologiesBankCardWrapper}> 
+          <Image 
+            src={bankCard} 
+            alt="bankCard" 
+            className={styles.web3TechnologiesBankCard}
+          />
+          <Image 
+            src={voiceSvg}
+            alt="voice"
+            className={styles.web3TechnologiesVoiceIcon}
+          />
+        </div>
         <Image 
           src={countriesMap} 
           alt="countriesMap" 

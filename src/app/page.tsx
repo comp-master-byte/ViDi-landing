@@ -34,27 +34,20 @@ export default function Home() {
   return (
     <div className={styles.app}>
       <Header />
-      
       <TravelComfort />
-      
       <ResponsiveContainer>
         <Web3Technologies />
       </ResponsiveContainer>
-      
       <CryptoLine />
       <ESimFeatures />
-
       <div className={styles.container}>
         <FinanceRhythm />
       </div>
-
       <ResponsiveContainer>
         <TravelBonuses />
         <Subscription />
       </ResponsiveContainer>
-
       <SocialMediaLine />
-
       <ResponsiveContainer>
         <FAQ />
         <Footer />

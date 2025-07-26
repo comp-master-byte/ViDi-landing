@@ -35,7 +35,6 @@ export const TravelComfort = memo(function TravelComfort() {
             src={webApplicationWebp} 
             alt="" 
             loading="eager"
-            quality={100}
           />
           <Image 
             priority

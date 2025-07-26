@@ -31,6 +31,7 @@ export const CreateCardWidget = memo(function CreateCardWidget({
         </Button>
       </a>
       <Image 
+        loading='eager'
         src={ViDi} 
         alt="ViDi" 
         className={styles.createCardWidgetLogo} 

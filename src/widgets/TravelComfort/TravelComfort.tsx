@@ -6,6 +6,8 @@ import { PAYMENT_WAYS } from "./consts";
 import { IconCard, ResponsiveContainer } from "@/shared/components";
 import webApplication from "@/shared/assets/primary_page/web_application.png";
 import smallWebApplication from "@/shared/assets/primary_page/small_web_application.png";
+import smallWebApplicationWebp from "@/shared/assets/primary_page/small_web_application_webp.webp";
+import webApplicationWebp from '@/shared/assets/primary_page/primary_webp.webp';
 
 export const TravelComfort = memo(function TravelComfort() {
   return (
@@ -27,9 +29,20 @@ export const TravelComfort = memo(function TravelComfort() {
               ))}
             </div>
           </div> 
-          
-          <Image className={styles.webApplication} src={webApplication} alt="" />
-          <Image className={styles.smallWebApplication} src={smallWebApplication} alt="" />
+          <Image 
+            priority
+            className={styles.webApplication} 
+            src={webApplicationWebp} 
+            alt="" 
+            loading="eager"
+          />
+          <Image 
+            priority
+            className={styles.smallWebApplication} 
+            src={smallWebApplicationWebp} 
+            alt="" 
+            loading="eager"
+          />
         </section>
       </ResponsiveContainer>
     </div>

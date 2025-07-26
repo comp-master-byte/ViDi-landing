@@ -16,7 +16,7 @@ export const Loader = () => {
               r="60"
             />
         </svg>
-        <Image className={styles.vIcon} src={VidiIcon} alt='' />
+        <Image loading='eager' className={styles.vIcon} src={VidiIcon} alt='' />
       </div>
     </div>
   )

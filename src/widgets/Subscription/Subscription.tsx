@@ -8,7 +8,7 @@ import { BenifitsList } from "./components";
 export const Subscription = memo(function Subscription() {
 
   const renderSubscriptionImage = useCallback(() => {
-    return <Image className={styles.subscriptionImage} src={subscriptionImage} alt="" />
+    return <Image loading="eager" className={styles.subscriptionImage} src={subscriptionImage} alt="" />
   }, [])
 
   return (

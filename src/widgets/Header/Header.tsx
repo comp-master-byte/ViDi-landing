@@ -37,7 +37,7 @@ export const Header = memo(function Header() {
       <ResponsiveContainer>
         <div className={styles.headerContent}>
           <div className={styles.headerLogo} onClick={() => handleScrollIntoView('travel-comfort')}>
-            <Image src={ViDiLogo} alt="ViDi" />
+            <Image loading="eager" src={ViDiLogo} alt="ViDi" />
           </div>
           <ul className={styles.headerLinksList}>
             <li 

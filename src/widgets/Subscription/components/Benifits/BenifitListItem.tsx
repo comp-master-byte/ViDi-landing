@@ -13,7 +13,7 @@ export function BenifitListItem({
 }: BenifitListItemProps) {
   return (
     <div className={styles.benifitListItemWrapper}>
-      <Image className={styles.benifitListItemIcon} src={icon} alt='' />
+      <Image loading="eager" className={styles.benifitListItemIcon} src={icon} alt='' />
       <Title24>{title}</Title24>
     </div>
   )

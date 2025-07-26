@@ -159,6 +159,7 @@ export const Footer = memo(function Footer() {
       <div className={styles.footerBottomContent}>
         <div className={styles.footerBottomLeft}>
           <Image 
+            loading="eager"
             alt="" 
             src={vidiLogo} 
             className={styles.footerLogo} 
@@ -169,10 +170,10 @@ export const Footer = memo(function Footer() {
           </Text>
         </div>
         <div className={styles.footerBottomRight}>
-          <Image src={mastercardIcon} alt="mastercard" className={styles.paymentCard} />
-          <Image src={visaIcon} alt="visa" className={styles.paymentCard} />
-          <Image src={applePayIcon} alt="applePay" className={styles.paymentCard} />
-          <Image src={googlePayIcon} alt="googlePay" className={styles.paymentCard} />
+          <Image loading="eager" src={mastercardIcon} alt="mastercard" className={styles.paymentCard} />
+          <Image loading="eager" src={visaIcon} alt="visa" className={styles.paymentCard} />
+          <Image loading="eager" src={applePayIcon} alt="applePay" className={styles.paymentCard} />
+          <Image loading="eager" src={googlePayIcon} alt="googlePay" className={styles.paymentCard} />
         </div>
       </div>
     </footer>

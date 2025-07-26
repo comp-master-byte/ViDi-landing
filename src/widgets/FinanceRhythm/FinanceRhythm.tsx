@@ -83,15 +83,15 @@ function FinanceRhythmSlider({
 export const FinanceRhythm = memo(function FinanceRhythm() {
 
   const renderWeb3TopUpImage = useCallback(() => {
-    return <Image className={styles.financeCardImg} src={web3TopUp} alt="" />
+    return <Image loading="eager" className={styles.financeCardImg} src={web3TopUp} alt="" />
   }, [])
 
   const renderShareWithFriendsImage = useCallback(() => {
-    return <Image className={styles.financeCardImg} src={shareWithFriends} alt="" />
+    return <Image loading="eager" className={styles.financeCardImg} src={shareWithFriends} alt="" />
   }, [])
 
   const renderScanQrCodeImage = useCallback(() => {
-    return <Image className={styles.financeCardImg} src={scanQrCode} alt="" />
+    return <Image loading="eager" className={styles.financeCardImg} src={scanQrCode} alt="" />
   }, [])
 
   const financeCardsList = useMemo(() => {

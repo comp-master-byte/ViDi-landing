@@ -15,11 +15,11 @@ import voiceSvg from '@/shared/assets/virtual_web3_map/icons/voice.svg';
 
 function CardRegistrationProcess() {
   const renderCreateCardInAppIcon = useCallback(() => {
-    return <Image className={styles.registrationProcessImage__1} src={createCardInApp} alt="createCardInApp" />
+    return <Image loading="eager" className={styles.registrationProcessImage__1} src={createCardInApp} alt="createCardInApp" />
   }, [])
 
   const renderTopUpCardIcon = useCallback(() => {
-    return <Image className={styles.registrationProcessImage__2} src={topUpCard} alt="topUpCard" />
+    return <Image loading="eager" className={styles.registrationProcessImage__2} src={topUpCard} alt="topUpCard" />
   }, [])
 
   const renderPaymentButtons = useCallback(() => {
@@ -74,7 +74,8 @@ export const Web3Technologies = memo(function Web3Technologies() {
           <Subtitle16 className={styles.web3PaymentMapInfo__subtitle}>Конвертация валют с минимальными комиссиями</Subtitle16>
           <div className={styles.web3PaymentCountriesList}>
             {COUNTRIES.map((country) => (
-              <Image 
+              <Image
+                loading="eager" 
                 alt={country.name}
                 key={country.id} 
                 src={country.countryIcon} 
@@ -85,17 +86,20 @@ export const Web3Technologies = memo(function Web3Technologies() {
         </div>
         <div className={styles.web3TechnologiesBankCardWrapper}> 
           <Image 
+            loading="eager"
             src={bankCard} 
             alt="bankCard" 
             className={styles.web3TechnologiesBankCard}
           />
-          <Image 
+          <Image
+            loading="eager" 
             src={voiceSvg}
             alt="voice"
             className={styles.web3TechnologiesVoiceIcon}
           />
         </div>
-        <Image 
+        <Image
+          loading="eager" 
           src={countriesMap} 
           alt="countriesMap" 
           className={styles.web3TechnologiesCountriesMap}

@@ -81,6 +81,7 @@ export const ESimFeatures = memo(function eSimFeatures() {
     return (
       <div className={styles.eSimFeaturesImagesWrapper}>
         <Image 
+          loading="eager"
           src={countriesList} 
           alt="countriesList" 
           className={classNames(
@@ -95,6 +96,7 @@ export const ESimFeatures = memo(function eSimFeatures() {
     return (
       <div className={styles.eSimFeaturesImagesWrapper}>
         <Image 
+          loading="eager"
           src={tariffs} 
           alt="tariffs" 
           className={classNames(
@@ -109,6 +111,7 @@ export const ESimFeatures = memo(function eSimFeatures() {
     return (
       <div className={styles.eSimFeaturesImagesWrapper}>
         <Image 
+          loading="eager"
           src={traffic} 
           alt="traffic" 
           className={classNames(
@@ -120,11 +123,11 @@ export const ESimFeatures = memo(function eSimFeatures() {
   }, [])
 
   const renderRegionTariffIcon = useCallback(() => {
-    return <Image src={regionTariff} alt="regionTariff" />
+    return <Image loading="eager" src={regionTariff} alt="regionTariff" />
   }, [])
 
   const renderSimpleLoadingIcon = useCallback(() => {
-    return <Image src={simpleLoading} alt="simpleLoading" />
+    return <Image loading="eager" src={simpleLoading} alt="simpleLoading" />
   }, [])
 
   const renderSupportIcon = useCallback(() => {

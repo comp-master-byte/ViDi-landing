@@ -27,7 +27,7 @@ export const IconCard = memo(function IconCard({
         [styles.fullIconCard]: fullIcon
       })}
     >
-      <Image src={icon} alt={alt||''} />
+      <Image loading="eager" src={icon} alt={alt||''} />
     </div>
   )
 })

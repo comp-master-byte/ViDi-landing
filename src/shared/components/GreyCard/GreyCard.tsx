@@ -32,7 +32,7 @@ export const GreyCard = memo(function GreyCard({
       <div className={classNames(styles.greyCardTitleWrapper, headingClassName)}>
         {startIcon && (
           <div style={{background: startIconBg}} className={styles.greyCardTitleIconWrapper}>
-            <Image src={startIcon} alt="" />
+            <Image loading="eager" src={startIcon} alt="" />
           </div>
         )}
         <CardTitle className={titleClassName}>

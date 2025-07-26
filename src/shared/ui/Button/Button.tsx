@@ -36,7 +36,7 @@ export function Button({
     >
       {startIcon && (
         <div className={styles.startIconWrapper}>
-          <Image src={startIcon} alt='' />
+          <Image loading="eager" src={startIcon} alt='' />
         </div>
       )}
       {renderIcon && 

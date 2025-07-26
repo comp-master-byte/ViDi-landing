@@ -15,7 +15,7 @@ export function PaymentButton({
     <button className={classNames(styles.paymentButton, {
       [styles.accentPaymentButton]: isAccent
     })}>
-      <Image className={styles.paymentButtonIcon} src={icon} alt='payment-button' />
+      <Image loading="eager" className={styles.paymentButtonIcon} src={icon} alt='payment-button' />
     </button>
   )
 }

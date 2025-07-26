@@ -8,11 +8,11 @@ import Image from "next/image";
 export const TravelBonuses = memo(function TravelBonuses() {
 
   const renderReferalProgramImage = useCallback(() => {
-    return <Image className={styles.referIcon} src={referalProgram} alt="" />
+    return <Image loading="eager" className={styles.referIcon} src={referalProgram} alt="" />
   }, [])
 
   const renderCashbackImage = useCallback(() => {
-    return <Image className={styles.cashbackImg} src={cashback} alt="" />
+    return <Image loading="eager" className={styles.cashbackImg} src={cashback} alt="" />
   }, [])
 
   return (

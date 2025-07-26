@@ -14,10 +14,10 @@ export function Select({
   return (
     <select className={styles.selectWrapper}>
       <div className={styles.selectStartSlot}>
-        <Image className={styles.selectStartSlotIcon} src={icon} alt='' />
+        <Image loading="eager" className={styles.selectStartSlotIcon} src={icon} alt='' />
         <p className={styles.selectStartSlotTitle}>{title}</p>
       </div>
-      <Image src={rightArrow} alt='' />
+      <Image loading="eager" src={rightArrow} alt='' />
     </select>
   )
 }

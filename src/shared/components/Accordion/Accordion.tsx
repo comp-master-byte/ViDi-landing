@@ -32,7 +32,7 @@ export const Accordion = memo(function Accordion({
       <button className={styles.accordionHeader}>
         <Title24>{title}</Title24>
         <div className={styles.accordionIconWrapper}>
-          <Image className={styles.accordionIcon} src={openIcon} alt='accordion' />
+          <Image loading="eager" className={styles.accordionIcon} src={openIcon} alt='accordion' />
         </div>
       </button>
       <div

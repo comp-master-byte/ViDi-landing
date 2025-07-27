@@ -1,9 +1,6 @@
-'use client';
-import { Loader } from '@/shared/components';
 import './styles/global.css';
 import { Manrope } from 'next/font/google';
 import Script from 'next/script';
-import { useEffect, useState } from 'react';
 
 const manrope = Manrope({
   subsets: ['latin', 'cyrillic'],
@@ -15,16 +12,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <html lang="en" className={manrope.className}>
-      <body style={{overflow: loading ? 'hidden' : 'auto'}}>
+      <body>
         <Script
           strategy="afterInteractive"
           src="https://mc.yandex.ru/metrika/tag.js"
@@ -60,9 +50,7 @@ export default function RootLayout({
             />
           </div>
         </noscript>
-        {loading && <Loader />}
         {children}
-        {/* {loading ? <Loader /> : children} */}
       </body>
     </html>
   );
